@@ -1,0 +1,620 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		910596BA219E43E300657EFA /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 910596B9219E43E300657EFA /* AppDelegate.swift */; };
+		910596BC219E43E300657EFA /* GameViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 910596BB219E43E300657EFA /* GameViewController.swift */; };
+		910596BF219E43E300657EFA /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 910596BD219E43E300657EFA /* Main.storyboard */; };
+		910596C2219E43E300657EFA /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 910596C0219E43E300657EFA /* LaunchScreen.storyboard */; };
+		910596CB219E43E300657EFA /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 910596CA219E43E300657EFA /* AppDelegate.swift */; };
+		910596CD219E43E300657EFA /* GameViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 910596CC219E43E300657EFA /* GameViewController.swift */; };
+		910596D0219E43E300657EFA /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 910596CE219E43E300657EFA /* Main.storyboard */; };
+		910596D9219E43E300657EFA /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 910596D8219E43E300657EFA /* AppDelegate.swift */; };
+		910596DB219E43E300657EFA /* GameViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 910596DA219E43E300657EFA /* GameViewController.swift */; };
+		910596DE219E43E300657EFA /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 910596DC219E43E300657EFA /* Main.storyboard */; };
+		910596E0219E43E300657EFA /* GameController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 910596AF219E43E000657EFA /* GameController.swift */; };
+		910596E1219E43E300657EFA /* GameController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 910596AF219E43E000657EFA /* GameController.swift */; };
+		910596E2219E43E300657EFA /* GameController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 910596AF219E43E000657EFA /* GameController.swift */; };
+		910596E3219E43E300657EFA /* Art.scnassets in Resources */ = {isa = PBXBuildFile; fileRef = 910596B0219E43E000657EFA /* Art.scnassets */; };
+		910596E4219E43E300657EFA /* Art.scnassets in Resources */ = {isa = PBXBuildFile; fileRef = 910596B0219E43E000657EFA /* Art.scnassets */; };
+		910596E5219E43E300657EFA /* Art.scnassets in Resources */ = {isa = PBXBuildFile; fileRef = 910596B0219E43E000657EFA /* Art.scnassets */; };
+		910596E6219E43E300657EFA /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 910596B1219E43E300657EFA /* Assets.xcassets */; };
+		910596E7219E43E300657EFA /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 910596B1219E43E300657EFA /* Assets.xcassets */; };
+		910596E8219E43E300657EFA /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 910596B1219E43E300657EFA /* Assets.xcassets */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		910596AF219E43E000657EFA /* GameController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameController.swift; sourceTree = "<group>"; };
+		910596B0219E43E000657EFA /* Art.scnassets */ = {isa = PBXFileReference; lastKnownFileType = wrapper.scnassets; path = Art.scnassets; sourceTree = "<group>"; };
+		910596B1219E43E300657EFA /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		910596B6219E43E300657EFA /* Capitalist World.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Capitalist World.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		910596B9219E43E300657EFA /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		910596BB219E43E300657EFA /* GameViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameViewController.swift; sourceTree = "<group>"; };
+		910596BE219E43E300657EFA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		910596C1219E43E300657EFA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		910596C3219E43E300657EFA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		910596C8219E43E300657EFA /* Capitalist World.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Capitalist World.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		910596CA219E43E300657EFA /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		910596CC219E43E300657EFA /* GameViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameViewController.swift; sourceTree = "<group>"; };
+		910596CF219E43E300657EFA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		910596D1219E43E300657EFA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		910596D6219E43E300657EFA /* Capitalist World.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Capitalist World.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		910596D8219E43E300657EFA /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		910596DA219E43E300657EFA /* GameViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameViewController.swift; sourceTree = "<group>"; };
+		910596DD219E43E300657EFA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		910596DF219E43E300657EFA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		910596B3219E43E300657EFA /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		910596C5219E43E300657EFA /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		910596D3219E43E300657EFA /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		910596A9219E43E000657EFA = {
+			isa = PBXGroup;
+			children = (
+				910596AE219E43E000657EFA /* Capitalist World Shared */,
+				910596B8219E43E300657EFA /* Capitalist World iOS */,
+				910596C9219E43E300657EFA /* Capitalist World tvOS */,
+				910596D7219E43E300657EFA /* Capitalist World macOS */,
+				910596B7219E43E300657EFA /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		910596AE219E43E000657EFA /* Capitalist World Shared */ = {
+			isa = PBXGroup;
+			children = (
+				910596AF219E43E000657EFA /* GameController.swift */,
+				910596B0219E43E000657EFA /* Art.scnassets */,
+				910596B1219E43E300657EFA /* Assets.xcassets */,
+			);
+			path = "Capitalist World Shared";
+			sourceTree = "<group>";
+		};
+		910596B7219E43E300657EFA /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				910596B6219E43E300657EFA /* Capitalist World.app */,
+				910596C8219E43E300657EFA /* Capitalist World.app */,
+				910596D6219E43E300657EFA /* Capitalist World.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		910596B8219E43E300657EFA /* Capitalist World iOS */ = {
+			isa = PBXGroup;
+			children = (
+				910596B9219E43E300657EFA /* AppDelegate.swift */,
+				910596BB219E43E300657EFA /* GameViewController.swift */,
+				910596BD219E43E300657EFA /* Main.storyboard */,
+				910596C0219E43E300657EFA /* LaunchScreen.storyboard */,
+				910596C3219E43E300657EFA /* Info.plist */,
+			);
+			path = "Capitalist World iOS";
+			sourceTree = "<group>";
+		};
+		910596C9219E43E300657EFA /* Capitalist World tvOS */ = {
+			isa = PBXGroup;
+			children = (
+				910596CA219E43E300657EFA /* AppDelegate.swift */,
+				910596CC219E43E300657EFA /* GameViewController.swift */,
+				910596CE219E43E300657EFA /* Main.storyboard */,
+				910596D1219E43E300657EFA /* Info.plist */,
+			);
+			path = "Capitalist World tvOS";
+			sourceTree = "<group>";
+		};
+		910596D7219E43E300657EFA /* Capitalist World macOS */ = {
+			isa = PBXGroup;
+			children = (
+				910596D8219E43E300657EFA /* AppDelegate.swift */,
+				910596DA219E43E300657EFA /* GameViewController.swift */,
+				910596DC219E43E300657EFA /* Main.storyboard */,
+				910596DF219E43E300657EFA /* Info.plist */,
+			);
+			path = "Capitalist World macOS";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		910596B5219E43E300657EFA /* Capitalist World iOS */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 910596EB219E43E300657EFA /* Build configuration list for PBXNativeTarget "Capitalist World iOS" */;
+			buildPhases = (
+				910596B2219E43E300657EFA /* Sources */,
+				910596B3219E43E300657EFA /* Frameworks */,
+				910596B4219E43E300657EFA /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Capitalist World iOS";
+			productName = "Capitalist World iOS";
+			productReference = 910596B6219E43E300657EFA /* Capitalist World.app */;
+			productType = "com.apple.product-type.application";
+		};
+		910596C7219E43E300657EFA /* Capitalist World tvOS */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 910596EE219E43E300657EFA /* Build configuration list for PBXNativeTarget "Capitalist World tvOS" */;
+			buildPhases = (
+				910596C4219E43E300657EFA /* Sources */,
+				910596C5219E43E300657EFA /* Frameworks */,
+				910596C6219E43E300657EFA /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Capitalist World tvOS";
+			productName = "Capitalist World tvOS";
+			productReference = 910596C8219E43E300657EFA /* Capitalist World.app */;
+			productType = "com.apple.product-type.application";
+		};
+		910596D5219E43E300657EFA /* Capitalist World macOS */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 910596F1219E43E300657EFA /* Build configuration list for PBXNativeTarget "Capitalist World macOS" */;
+			buildPhases = (
+				910596D2219E43E300657EFA /* Sources */,
+				910596D3219E43E300657EFA /* Frameworks */,
+				910596D4219E43E300657EFA /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Capitalist World macOS";
+			productName = "Capitalist World macOS";
+			productReference = 910596D6219E43E300657EFA /* Capitalist World.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		910596AA219E43E000657EFA /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1010;
+				LastUpgradeCheck = 1010;
+				ORGANIZATIONNAME = Pozo;
+				TargetAttributes = {
+					910596B5219E43E300657EFA = {
+						CreatedOnToolsVersion = 10.1;
+					};
+					910596C7219E43E300657EFA = {
+						CreatedOnToolsVersion = 10.1;
+					};
+					910596D5219E43E300657EFA = {
+						CreatedOnToolsVersion = 10.1;
+					};
+				};
+			};
+			buildConfigurationList = 910596AD219E43E000657EFA /* Build configuration list for PBXProject "Capitalist World" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 910596A9219E43E000657EFA;
+			productRefGroup = 910596B7219E43E300657EFA /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				910596B5219E43E300657EFA /* Capitalist World iOS */,
+				910596C7219E43E300657EFA /* Capitalist World tvOS */,
+				910596D5219E43E300657EFA /* Capitalist World macOS */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		910596B4219E43E300657EFA /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				910596BF219E43E300657EFA /* Main.storyboard in Resources */,
+				910596C2219E43E300657EFA /* LaunchScreen.storyboard in Resources */,
+				910596E6219E43E300657EFA /* Assets.xcassets in Resources */,
+				910596E3219E43E300657EFA /* Art.scnassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		910596C6219E43E300657EFA /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				910596D0219E43E300657EFA /* Main.storyboard in Resources */,
+				910596E7219E43E300657EFA /* Assets.xcassets in Resources */,
+				910596E4219E43E300657EFA /* Art.scnassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		910596D4219E43E300657EFA /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				910596DE219E43E300657EFA /* Main.storyboard in Resources */,
+				910596E8219E43E300657EFA /* Assets.xcassets in Resources */,
+				910596E5219E43E300657EFA /* Art.scnassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		910596B2219E43E300657EFA /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				910596BC219E43E300657EFA /* GameViewController.swift in Sources */,
+				910596E0219E43E300657EFA /* GameController.swift in Sources */,
+				910596BA219E43E300657EFA /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		910596C4219E43E300657EFA /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				910596CD219E43E300657EFA /* GameViewController.swift in Sources */,
+				910596E1219E43E300657EFA /* GameController.swift in Sources */,
+				910596CB219E43E300657EFA /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		910596D2219E43E300657EFA /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				910596DB219E43E300657EFA /* GameViewController.swift in Sources */,
+				910596E2219E43E300657EFA /* GameController.swift in Sources */,
+				910596D9219E43E300657EFA /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		910596BD219E43E300657EFA /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				910596BE219E43E300657EFA /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		910596C0219E43E300657EFA /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				910596C1219E43E300657EFA /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+		910596CE219E43E300657EFA /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				910596CF219E43E300657EFA /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		910596DC219E43E300657EFA /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				910596DD219E43E300657EFA /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		910596E9219E43E300657EFA /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		910596EA219E43E300657EFA /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+			};
+			name = Release;
+		};
+		910596EC219E43E300657EFA /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = E33Q3EJD56;
+				INFOPLIST_FILE = "Capitalist World iOS/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.pozo.Capitalist-World";
+				PRODUCT_NAME = "Capitalist World";
+				SDKROOT = iphoneos;
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		910596ED219E43E300657EFA /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = E33Q3EJD56;
+				INFOPLIST_FILE = "Capitalist World iOS/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.pozo.Capitalist-World";
+				PRODUCT_NAME = "Capitalist World";
+				SDKROOT = iphoneos;
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		910596EF219E43E300657EFA /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = "tvOS App Icon & Top Shelf Image";
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = "tvOS LaunchImage";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = E33Q3EJD56;
+				INFOPLIST_FILE = "Capitalist World tvOS/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.pozo.Capitalist-World";
+				PRODUCT_NAME = "Capitalist World";
+				SDKROOT = appletvos;
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = 3;
+				TVOS_DEPLOYMENT_TARGET = 12.1;
+			};
+			name = Debug;
+		};
+		910596F0219E43E300657EFA /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = "tvOS App Icon & Top Shelf Image";
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = "tvOS LaunchImage";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = E33Q3EJD56;
+				INFOPLIST_FILE = "Capitalist World tvOS/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.pozo.Capitalist-World";
+				PRODUCT_NAME = "Capitalist World";
+				SDKROOT = appletvos;
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = 3;
+				TVOS_DEPLOYMENT_TARGET = 12.1;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		910596F2219E43E300657EFA /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "-";
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = E33Q3EJD56;
+				INFOPLIST_FILE = "Capitalist World macOS/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 10.14;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.pozo.Capitalist-World";
+				PRODUCT_NAME = "Capitalist World";
+				SDKROOT = macosx;
+				SWIFT_VERSION = 4.2;
+			};
+			name = Debug;
+		};
+		910596F3219E43E300657EFA /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "-";
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = E33Q3EJD56;
+				INFOPLIST_FILE = "Capitalist World macOS/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 10.14;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.pozo.Capitalist-World";
+				PRODUCT_NAME = "Capitalist World";
+				SDKROOT = macosx;
+				SWIFT_VERSION = 4.2;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		910596AD219E43E000657EFA /* Build configuration list for PBXProject "Capitalist World" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				910596E9219E43E300657EFA /* Debug */,
+				910596EA219E43E300657EFA /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		910596EB219E43E300657EFA /* Build configuration list for PBXNativeTarget "Capitalist World iOS" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				910596EC219E43E300657EFA /* Debug */,
+				910596ED219E43E300657EFA /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		910596EE219E43E300657EFA /* Build configuration list for PBXNativeTarget "Capitalist World tvOS" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				910596EF219E43E300657EFA /* Debug */,
+				910596F0219E43E300657EFA /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		910596F1219E43E300657EFA /* Build configuration list for PBXNativeTarget "Capitalist World macOS" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				910596F2219E43E300657EFA /* Debug */,
+				910596F3219E43E300657EFA /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 910596AA219E43E000657EFA /* Project object */;
+}
