@@ -14,6 +14,12 @@ class Comprar: UIViewController {
     //gestos para volver al ViewController
     
     //
+    @IBOutlet weak var cantidadTextField: NSLayoutConstraint!
+   /* var númeroCantidadTextField: Int
+    
+    init() {
+        self.númeroCantidadTextField = cantidadTextField.integerValue
+    }*/
     
     @IBOutlet weak var collectionView: UICollectionView!
     //todavía no veo lo de las collectionviews :(
@@ -24,8 +30,8 @@ class Comprar: UIViewController {
     var shopAvailableStock = AvailableStock(apples: 500, appleSeeds: 100)
     
     @IBAction func buyApplesButton(_ sender: UIButton) {
-        userAvailableStockLabel.text = userAvailableStockLabel.text! + String(10)
-        shopAvailableStock.apples -= 10
+        userAvailableStockLabel.text = userAvailableStockLabel.text! + String(/*por ahora puse 10 como cantidad por defecto*/10/*númeroCantidadTextField*/)
+        shopAvailableStock.apples -= 10/*númeroCantidadTextField*/
     }
     
 }

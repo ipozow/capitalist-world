@@ -27,6 +27,7 @@
 		910596E8219E43E300657EFA /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 910596B1219E43E300657EFA /* Assets.xcassets */; };
 		9113679921CDB4AF00694B2C /* StockData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9113679821CDB4AF00694B2C /* StockData.swift */; };
 		911F731B21C30C3D00E78F81 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 911F731A21C30C3D00E78F81 /* ViewController.swift */; };
+		91CD247721D011CB0083B222 /* Construir.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91CD247621D011CB0083B222 /* Construir.swift */; };
 		91E243A221CD2229008ACD02 /* Comprar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91E243A121CD2229008ACD02 /* Comprar.swift */; };
 		91E243A421CD229C008ACD02 /* Vender.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91E243A321CD229C008ACD02 /* Vender.swift */; };
 /* End PBXBuildFile section */
@@ -52,6 +53,7 @@
 		910596DF219E43E300657EFA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		9113679821CDB4AF00694B2C /* StockData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StockData.swift; sourceTree = "<group>"; };
 		911F731A21C30C3D00E78F81 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		91CD247621D011CB0083B222 /* Construir.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Construir.swift; sourceTree = "<group>"; };
 		91E243A121CD2229008ACD02 /* Comprar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Comprar.swift; sourceTree = "<group>"; };
 		91E243A321CD229C008ACD02 /* Vender.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Vender.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -115,11 +117,12 @@
 		910596B8219E43E300657EFA /* Capitalist World iOS */ = {
 			isa = PBXGroup;
 			children = (
-				910596B9219E43E300657EFA /* AppDelegate.swift */,
 				911F731A21C30C3D00E78F81 /* ViewController.swift */,
 				91E243A121CD2229008ACD02 /* Comprar.swift */,
 				91E243A321CD229C008ACD02 /* Vender.swift */,
 				910596BD219E43E300657EFA /* Main.storyboard */,
+				91CD247621D011CB0083B222 /* Construir.swift */,
+				910596B9219E43E300657EFA /* AppDelegate.swift */,
 				9113679821CDB4AF00694B2C /* StockData.swift */,
 				910596C0219E43E300657EFA /* LaunchScreen.storyboard */,
 				910596C3219E43E300657EFA /* Info.plist */,
@@ -285,6 +288,7 @@
 			files = (
 				91E243A421CD229C008ACD02 /* Vender.swift in Sources */,
 				91E243A221CD2229008ACD02 /* Comprar.swift in Sources */,
+				91CD247721D011CB0083B222 /* Construir.swift in Sources */,
 				9113679921CDB4AF00694B2C /* StockData.swift in Sources */,
 				911F731B21C30C3D00E78F81 /* ViewController.swift in Sources */,
 				910596E0219E43E300657EFA /* GameController.swift in Sources */,
