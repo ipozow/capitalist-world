@@ -8,7 +8,6 @@
 
 /* Begin PBXBuildFile section */
 		910596BA219E43E300657EFA /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 910596B9219E43E300657EFA /* AppDelegate.swift */; };
-		910596BC219E43E300657EFA /* GameViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 910596BB219E43E300657EFA /* GameViewController.swift */; };
 		910596BF219E43E300657EFA /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 910596BD219E43E300657EFA /* Main.storyboard */; };
 		910596C2219E43E300657EFA /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 910596C0219E43E300657EFA /* LaunchScreen.storyboard */; };
 		910596CB219E43E300657EFA /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 910596CA219E43E300657EFA /* AppDelegate.swift */; };
@@ -26,6 +25,10 @@
 		910596E6219E43E300657EFA /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 910596B1219E43E300657EFA /* Assets.xcassets */; };
 		910596E7219E43E300657EFA /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 910596B1219E43E300657EFA /* Assets.xcassets */; };
 		910596E8219E43E300657EFA /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 910596B1219E43E300657EFA /* Assets.xcassets */; };
+		9113679921CDB4AF00694B2C /* StockData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9113679821CDB4AF00694B2C /* StockData.swift */; };
+		911F731B21C30C3D00E78F81 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 911F731A21C30C3D00E78F81 /* ViewController.swift */; };
+		91E243A221CD2229008ACD02 /* Comprar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91E243A121CD2229008ACD02 /* Comprar.swift */; };
+		91E243A421CD229C008ACD02 /* Vender.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91E243A321CD229C008ACD02 /* Vender.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -34,7 +37,6 @@
 		910596B1219E43E300657EFA /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		910596B6219E43E300657EFA /* Capitalist World.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Capitalist World.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		910596B9219E43E300657EFA /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		910596BB219E43E300657EFA /* GameViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameViewController.swift; sourceTree = "<group>"; };
 		910596BE219E43E300657EFA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		910596C1219E43E300657EFA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		910596C3219E43E300657EFA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -48,6 +50,10 @@
 		910596DA219E43E300657EFA /* GameViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameViewController.swift; sourceTree = "<group>"; };
 		910596DD219E43E300657EFA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		910596DF219E43E300657EFA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		9113679821CDB4AF00694B2C /* StockData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StockData.swift; sourceTree = "<group>"; };
+		911F731A21C30C3D00E78F81 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		91E243A121CD2229008ACD02 /* Comprar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Comprar.swift; sourceTree = "<group>"; };
+		91E243A321CD229C008ACD02 /* Vender.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Vender.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -110,8 +116,11 @@
 			isa = PBXGroup;
 			children = (
 				910596B9219E43E300657EFA /* AppDelegate.swift */,
-				910596BB219E43E300657EFA /* GameViewController.swift */,
+				911F731A21C30C3D00E78F81 /* ViewController.swift */,
+				91E243A121CD2229008ACD02 /* Comprar.swift */,
+				91E243A321CD229C008ACD02 /* Vender.swift */,
 				910596BD219E43E300657EFA /* Main.storyboard */,
+				9113679821CDB4AF00694B2C /* StockData.swift */,
 				910596C0219E43E300657EFA /* LaunchScreen.storyboard */,
 				910596C3219E43E300657EFA /* Info.plist */,
 			);
@@ -274,7 +283,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				910596BC219E43E300657EFA /* GameViewController.swift in Sources */,
+				91E243A421CD229C008ACD02 /* Vender.swift in Sources */,
+				91E243A221CD2229008ACD02 /* Comprar.swift in Sources */,
+				9113679921CDB4AF00694B2C /* StockData.swift in Sources */,
+				911F731B21C30C3D00E78F81 /* ViewController.swift in Sources */,
 				910596E0219E43E300657EFA /* GameController.swift in Sources */,
 				910596BA219E43E300657EFA /* AppDelegate.swift in Sources */,
 			);
