@@ -28,10 +28,13 @@ class Comprar: UIViewController {
     @IBOutlet weak var userAvailableStockLabel: UILabel!
     
     var shopAvailableStock = AvailableStock(apples: 500, appleSeeds: 100)
+    var shopAvailableStockPrices = StockPrice(applesPrice: 20, appleSeedsPrice: 5)
     
     @IBAction func buyApplesButton(_ sender: UIButton) {
         userAvailableStockLabel.text = userAvailableStockLabel.text! + String(/*por ahora puse 10 como cantidad por defecto*/10/*númeroCantidadTextField*/)
         shopAvailableStock.apples -= 10/*númeroCantidadTextField*/
+        dinero -= shopAvailableStockPrices.applesPrice * 10//númeroCantidadTextField
     }
+    
     
 }

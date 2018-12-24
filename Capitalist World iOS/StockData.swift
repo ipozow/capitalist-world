@@ -12,3 +12,8 @@ struct AvailableStock {
     var apples: Int
     var appleSeeds: Int
 }
+
+struct StockPrice {
+    var applesPrice: Int
+    var appleSeedsPrice: Int
+}

@@ -8,6 +8,11 @@
 
 import UIKit
 
+var dinero = 100 /*: Int {
+    UserDefaults.standard.set(dinero, forKey: "dineroActual")
+    return dinero
+}*/
+
 class ViewController: UIViewController {
     
     override func viewDidLoad() {
@@ -16,6 +21,7 @@ class ViewController: UIViewController {
     }
     
     @IBAction func venderTransitionButton(_ sender: UIButton) {
+        updateMoney()
     }
     @IBOutlet weak var dineroLabel: UILabel!
     @IBOutlet weak var revenueLabel: UILabel!
@@ -26,6 +32,8 @@ class ViewController: UIViewController {
         }
         return self.profit
     }
-    var dinero = 100
+    func updateMoney() {
+        dineroLabel.text = String(dinero)
+    }
     
 }
