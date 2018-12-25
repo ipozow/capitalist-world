@@ -7,19 +7,27 @@
 //
 
 import UIKit
-
-//
-//var dinero = 100
-///*: Int {
-//    UserDefaults.standard.set(dinero, forKey: "dineroActual")
-//    return dinero
-//}*/
+//Por hacer: que al agregar dinero no se reinicie el dinero a este valor var dinero: Int
+var dinero = 100
 
 class ViewController: UIViewController {
+    
+    let defaults = UserDefaults.standard
+    
+    struct Keys {
+        static let totalBalance = "totalBalance"
+    }
+    
+    @IBAction func testButton(_ sender: UIButton) {
+        dinero += 10
+        saveDinero()
+        checkSavedDinero()
+    }
     
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
+        checkSavedDinero()
     }
     
     @IBAction func venderTransitionButton(_ sender: UIButton) {
@@ -27,5 +35,13 @@ class ViewController: UIViewController {
     
     @IBOutlet weak var dineroLabel: UILabel!
     @IBOutlet weak var revenueLabel: UILabel!
+    //Por hacer: un class que se pueda llamar en cualquier vista de las funciones de abajo
+    func saveDinero() {
+        defaults.set(dinero, forKey: Keys.totalBalance)
+    }
+    func checkSavedDinero() {
+        let dinero = defaults.integer(forKey: Keys.totalBalance)
+        dineroLabel.text = "\(dinero)"
+    }
     
 }

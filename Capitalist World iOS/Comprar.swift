@@ -33,7 +33,5 @@ class Comprar: UIViewController {
     
     var shopAvailableStock = AvailableStock(apples: 500, appleSeeds: 100)
     var shopAvailableStockPrices = StockPrice(applesPrice: 20, appleSeedsPrice: 5)
-    
-   
-    
+        
 }
