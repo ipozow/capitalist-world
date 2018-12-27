@@ -8,7 +8,10 @@
 
 import UIKit
 //Por hacer: que al agregar dinero no se reinicie el dinero a este valor var dinero: Int
-var dinero = 100
+//var dinero = 100
+
+var dineroShared = ViewController()
+
 
 class ViewController: UIViewController {
     
@@ -17,6 +20,13 @@ class ViewController: UIViewController {
     struct Keys {
         static let totalBalance = "totalBalance"
     }
+   
+    var dinero = 100
+    //    var dinero: Int
+//    init(dinero: Int) {
+//        self.dinero = dinero
+//    }
+    
     
     @IBAction func testButton(_ sender: UIButton) {
         dinero += 10

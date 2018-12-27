@@ -30,6 +30,11 @@ class Comprar: UIViewController {
         }
     }
 
+    @IBAction func buyApplesButton(_ sender: UIButton) {
+        dineroShared.dinero += 10
+        ViewController().saveDinero()
+    }
+    
     
     var shopAvailableStock = AvailableStock(apples: 500, appleSeeds: 100)
     var shopAvailableStockPrices = StockPrice(applesPrice: 20, appleSeedsPrice: 5)

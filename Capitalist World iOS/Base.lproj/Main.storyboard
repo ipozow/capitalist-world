@@ -281,6 +281,9 @@
                                                     <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="90" id="tlv-1E-TBM"/>
                                                 </constraints>
                                                 <state key="normal" title="Button" backgroundImage="apple"/>
+                                                <connections>
+                                                    <action selector="buyApplesButton:" destination="Jq1-8d-Llk" eventType="touchUpInside" id="8Hj-0j-3An"/>
+                                                </connections>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="yzR-Mn-47H">
                                                 <rect key="frame" x="90" y="0.0" width="90" height="90"/>
