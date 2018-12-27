@@ -19,9 +19,6 @@
 		910596E0219E43E300657EFA /* GameController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 910596AF219E43E000657EFA /* GameController.swift */; };
 		910596E1219E43E300657EFA /* GameController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 910596AF219E43E000657EFA /* GameController.swift */; };
 		910596E2219E43E300657EFA /* GameController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 910596AF219E43E000657EFA /* GameController.swift */; };
-		910596E3219E43E300657EFA /* Art.scnassets in Resources */ = {isa = PBXBuildFile; fileRef = 910596B0219E43E000657EFA /* Art.scnassets */; };
-		910596E4219E43E300657EFA /* Art.scnassets in Resources */ = {isa = PBXBuildFile; fileRef = 910596B0219E43E000657EFA /* Art.scnassets */; };
-		910596E5219E43E300657EFA /* Art.scnassets in Resources */ = {isa = PBXBuildFile; fileRef = 910596B0219E43E000657EFA /* Art.scnassets */; };
 		910596E6219E43E300657EFA /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 910596B1219E43E300657EFA /* Assets.xcassets */; };
 		910596E7219E43E300657EFA /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 910596B1219E43E300657EFA /* Assets.xcassets */; };
 		910596E8219E43E300657EFA /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 910596B1219E43E300657EFA /* Assets.xcassets */; };
@@ -34,7 +31,6 @@
 
 /* Begin PBXFileReference section */
 		910596AF219E43E000657EFA /* GameController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameController.swift; sourceTree = "<group>"; };
-		910596B0219E43E000657EFA /* Art.scnassets */ = {isa = PBXFileReference; lastKnownFileType = wrapper.scnassets; path = Art.scnassets; sourceTree = "<group>"; };
 		910596B1219E43E300657EFA /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		910596B6219E43E300657EFA /* Capitalist World.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Capitalist World.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		910596B9219E43E300657EFA /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -98,7 +94,6 @@
 			isa = PBXGroup;
 			children = (
 				910596AF219E43E000657EFA /* GameController.swift */,
-				910596B0219E43E000657EFA /* Art.scnassets */,
 				910596B1219E43E300657EFA /* Assets.xcassets */,
 			);
 			path = "Capitalist World Shared";
@@ -255,7 +250,6 @@
 				910596BF219E43E300657EFA /* Main.storyboard in Resources */,
 				910596C2219E43E300657EFA /* LaunchScreen.storyboard in Resources */,
 				910596E6219E43E300657EFA /* Assets.xcassets in Resources */,
-				910596E3219E43E300657EFA /* Art.scnassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -265,7 +259,6 @@
 			files = (
 				910596D0219E43E300657EFA /* Main.storyboard in Resources */,
 				910596E7219E43E300657EFA /* Assets.xcassets in Resources */,
-				910596E4219E43E300657EFA /* Art.scnassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -275,7 +268,6 @@
 			files = (
 				910596DE219E43E300657EFA /* Main.storyboard in Resources */,
 				910596E8219E43E300657EFA /* Assets.xcassets in Resources */,
-				910596E5219E43E300657EFA /* Art.scnassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -469,7 +461,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = E33Q3EJD56;
+				DEVELOPMENT_TEAM = HKD2VCZ3TM;
 				INFOPLIST_FILE = "Capitalist World iOS/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -490,7 +482,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = E33Q3EJD56;
+				DEVELOPMENT_TEAM = HKD2VCZ3TM;
 				INFOPLIST_FILE = "Capitalist World iOS/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
 				LD_RUNPATH_SEARCH_PATHS = (

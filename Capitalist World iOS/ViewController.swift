@@ -50,7 +50,7 @@ class ViewController: UIViewController {
         defaults.set(dinero, forKey: Keys.totalBalance)
     }
     func checkSavedDinero() {
-        let dinero = defaults.integer(forKey: Keys.totalBalance)
+        dinero = defaults.integer(forKey: Keys.totalBalance)
         dineroLabel.text = "\(dinero)"
     }
     
