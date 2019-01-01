@@ -48,9 +48,10 @@ class ViewController: UIViewController {
     //Por hacer: un class que se pueda llamar en cualquier vista de las funciones de abajo
     func saveDinero() {
         defaults.set(dinero, forKey: Keys.totalBalance)
+        dinero = defaults.integer(forKey: Keys.totalBalance)
     }
     func checkSavedDinero() {
-        dinero = defaults.integer(forKey: Keys.totalBalance)
+        
         dineroLabel.text = "\(dinero)"
     }
     
