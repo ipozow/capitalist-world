@@ -20,7 +20,7 @@ class Comprar: UIViewController, UICollectionViewDelegate, UICollectionViewDataS
 
     let productImages: [UIImage] = [
         UIImage(named: "apple")!,
-        UIImage(named: "seeds")!
+        UIImage(named: "seeds")!,
     ]
     
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
@@ -46,14 +46,37 @@ class Comprar: UIViewController, UICollectionViewDelegate, UICollectionViewDataS
             print(cantidad)
         }
     }
-
-    @IBAction func buyApplesButton(_ sender: UIButton) {
-        dineroShared.dinero += 10
-        ViewController().saveDinero()
-    }
-    
     
     var shopAvailableStock = AvailableStock(apples: 500, appleSeeds: 100)
     var shopAvailableStockPrices = StockPrice(applesPrice: 20, appleSeedsPrice: 5)
-        
+    
+    var cantidadMultiplier = 1 //por hacer: enlazar el textfield de cantidad con esto
+    
+    var applesStock = 0
+    var appleSeedsStock = 0
+    
+    let defaults = UserDefaults.standard
+    
+    struct Keys {
+        static let totalStock = "totalStock"
+    }
+    
+    func saveStockWhenBuying() {
+        defaults.set(applesStock, forKey: Keys.totalStock)
+        defaults.set(appleSeedsStock, forKey: Keys.totalStock)
+    }
+    
+    @IBAction func productButtonTapped(_ sender: UIButton) {
+        print("sí funciona xd")
+        for product in products {
+            if let apples = product as? AvailableStock {
+                applesStock += cantidadMultiplier
+            } else {
+                appleSeedsStock += cantidadMultiplier
+                print(appleSeedsStock)
+            }
+        }
+    }
+    
+    
 }
