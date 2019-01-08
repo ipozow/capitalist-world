@@ -8,12 +8,20 @@
 
 import Foundation
 
-struct AvailableStock {
-    var apples: Int
-    var appleSeeds: Int
+class AppleSeedsStock {
+    var stock: Int
+    var price: Int
+    init(stock: Int, price: Int) {
+        self.stock = stock
+        self.price = price
+    }
 }
 
-struct StockPrice {
-    var applesPrice: Int
-    var appleSeedsPrice: Int
+class ApplesStock {
+    var stock: Int
+    var price: Int
+    init(stock: Int, price: Int) {
+        self.stock = stock
+        self.price = price
+    }
 }

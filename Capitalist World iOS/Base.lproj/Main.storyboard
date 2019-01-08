@@ -564,6 +564,7 @@
                         </connections>
                     </view>
                     <connections>
+                        <outlet property="cantidadTextField" destination="Pa3-XR-Uxu" id="Kn3-I9-wGq"/>
                         <outlet property="collectionView" destination="VEq-0u-KHK" id="eMj-Ir-O2n"/>
                         <outlet property="userAvailableStockLabel" destination="ktY-XL-7A4" id="Vgw-n3-JII"/>
                     </connections>
@@ -580,6 +581,6 @@
     </scenes>
     <inferredMetricsTieBreakers>
         <segue reference="rrd-gk-6vj"/>
-        <segue reference="72S-dG-YHm"/>
+        <segue reference="2rh-fF-uJs"/>
     </inferredMetricsTieBreakers>
 </document>

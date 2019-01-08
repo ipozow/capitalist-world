@@ -19,3 +19,7 @@ class GameTime {
         debugPrint(elapsedTime)
     }
 }
+
+func sellStockWhenAvailable() {
+    
+}

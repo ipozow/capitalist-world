@@ -37,23 +37,23 @@ class Comprar: UIViewController, UICollectionViewDelegate, UICollectionViewDataS
     
     @IBAction func textChanged(_ sender: UITextField) {
         if let cantidad = sender.text {
-            print(cantidad)
+            cantidadMultiplier = cantidad
+            print(cantidadMultiplier)
         }
     }
-    //Por hacer: guardar el valor de cantidad en una variable para luego usarla en el botón de compra
+    @IBOutlet weak var cantidadTextField: UITextField!
+    
     @IBAction func textFieldTouchUpOutside(_ sender: UITextField) {
-        if let cantidad = sender.text {
-            print(cantidad)
+        func textFieldShouldReturn(_ textField: UITextField) -> Bool {
+            textField.resignFirstResponder()
+            return true
         }
     }
     
-    var shopAvailableStock = AvailableStock(apples: 500, appleSeeds: 100)
-    var shopAvailableStockPrices = StockPrice(applesPrice: 20, appleSeedsPrice: 5)
+    var cantidadMultiplier = "" //por hacer: cantidadMultipier debe ser un Int
     
-    var cantidadMultiplier = 1 //por hacer: enlazar el textfield de cantidad con esto
-    
-    var applesStock = 0
-    var appleSeedsStock = 0
+    var applesData = ApplesStock(stock: 0, price: 10)
+    var appleSeedsData = AppleSeedsStock(stock: 0, price: 5)
     
     let defaults = UserDefaults.standard
     
@@ -62,21 +62,19 @@ class Comprar: UIViewController, UICollectionViewDelegate, UICollectionViewDataS
     }
     
     func saveStockWhenBuying() {
-        defaults.set(applesStock, forKey: Keys.totalStock)
-        defaults.set(appleSeedsStock, forKey: Keys.totalStock)
+        defaults.set(applesData.stock, forKey: Keys.totalStock)
+        defaults.set(appleSeedsData.stock, forKey: Keys.totalStock)
     }
     
     @IBAction func productButtonTapped(_ sender: UIButton) {
-        print("sí funciona xd")
-        for product in products {
-            if let apples = product as? AvailableStock {
-                applesStock += cantidadMultiplier
-            } else {
-                appleSeedsStock += cantidadMultiplier
-                print(appleSeedsStock)
-            }
-        }
+//        for product in products {
+//            if let apples = product as? ApplesStock {
+//                applesData.stock += cantidadMultiplier
+//            } else {
+//                appleSeedsData.stock += cantidadMultiplier
+//                print(appleSeedsData.stock)
+//            }
+//        }
     }
-    
     
 }
