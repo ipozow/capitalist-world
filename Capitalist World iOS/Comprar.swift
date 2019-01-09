@@ -37,7 +37,7 @@ class Comprar: UIViewController, UICollectionViewDelegate, UICollectionViewDataS
     
     @IBAction func textChanged(_ sender: UITextField) {
         if let cantidad = sender.text {
-            cantidadMultiplier = cantidad
+            cantidadMultiplier = Int(cantidad)!
             print(cantidadMultiplier)
         }
     }
@@ -50,7 +50,7 @@ class Comprar: UIViewController, UICollectionViewDelegate, UICollectionViewDataS
         }
     }
     
-    var cantidadMultiplier = "" //por hacer: cantidadMultipier debe ser un Int
+    var cantidadMultiplier = 1
     
     var applesData = ApplesStock(stock: 0, price: 10)
     var appleSeedsData = AppleSeedsStock(stock: 0, price: 5)
@@ -68,11 +68,11 @@ class Comprar: UIViewController, UICollectionViewDelegate, UICollectionViewDataS
     
     @IBAction func productButtonTapped(_ sender: UIButton) {
         if products.count == 0 {
-            applesData.stock += 1//cantidadMultiplier
-            ViewController().dinero -= applesData.price * 1 //cantidadMultiplier
+            applesData.stock += cantidadMultiplier
+            ViewController().dinero -= applesData.price * cantidadMultiplier
         } else {
-            appleSeedsData.stock += 1 //cantidadMultiplier
-            ViewController().dinero -= appleSeedsData.price * 1 //cantidadMultiplier
+            appleSeedsData.stock += cantidadMultiplier
+            ViewController().dinero -= appleSeedsData.price * cantidadMultiplier
         }
         userAvailableStockLabel.text = "\(applesData.stock)"
         print(ViewController().dinero)
