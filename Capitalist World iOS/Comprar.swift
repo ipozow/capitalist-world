@@ -67,14 +67,17 @@ class Comprar: UIViewController, UICollectionViewDelegate, UICollectionViewDataS
     }
     
     @IBAction func productButtonTapped(_ sender: UIButton) {
-//        for product in products {
-//            if let apples = product as? ApplesStock {
-//                applesData.stock += cantidadMultiplier
-//            } else {
-//                appleSeedsData.stock += cantidadMultiplier
-//                print(appleSeedsData.stock)
-//            }
-//        }
+        if products.count == 0 {
+            applesData.stock += 1//cantidadMultiplier
+            ViewController().dinero -= applesData.price * 1 //cantidadMultiplier
+        } else {
+            appleSeedsData.stock += 1 //cantidadMultiplier
+            ViewController().dinero -= appleSeedsData.price * 1 //cantidadMultiplier
+        }
+        userAvailableStockLabel.text = "\(applesData.stock)"
+        print(ViewController().dinero)
+        print(appleSeedsData.stock)
+        print(applesData.stock)
     }
     
 }
