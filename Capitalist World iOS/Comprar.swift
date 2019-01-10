@@ -30,7 +30,24 @@ class Comprar: UIViewController, UICollectionViewDelegate, UICollectionViewDataS
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "Cell", for: indexPath) as! CollectionViewCell
         cell.productImageView.image = productImages[indexPath.item]
+        cell.layer.borderColor = UIColor.lightGray.cgColor
+        cell.layer.borderWidth = 0.5
+        
         return cell
+    }
+    
+    
+    
+    func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
+        let cell = collectionView.cellForItem(at: indexPath)
+        cell?.layer.borderColor = UIColor.gray.cgColor
+        cell?.layer.borderWidth = 2
+    }
+    
+    func collectionView(_ collectionView: UICollectionView, didDeselectItemAt indexPath: IndexPath) {
+        let cell = collectionView.cellForItem(at: indexPath)
+        cell?.layer.borderColor = UIColor.lightGray.cgColor
+        cell?.layer.borderWidth = 0.5
     }
     
     @IBOutlet weak var userAvailableStockLabel: UILabel!
@@ -70,11 +87,15 @@ class Comprar: UIViewController, UICollectionViewDelegate, UICollectionViewDataS
         if products.count == 0 {
             applesData.stock += cantidadMultiplier
             ViewController().dinero -= applesData.price * cantidadMultiplier
+            ViewController().saveDinero()
+            userAvailableStockLabel.text = "\(applesData.stock)"
         } else {
             appleSeedsData.stock += cantidadMultiplier
             ViewController().dinero -= appleSeedsData.price * cantidadMultiplier
+            ViewController().saveDinero()
+            userAvailableStockLabel.text = "\(appleSeedsData.stock)"
         }
-        userAvailableStockLabel.text = "\(applesData.stock)"
+        
         print(ViewController().dinero)
         print(appleSeedsData.stock)
         print(applesData.stock)

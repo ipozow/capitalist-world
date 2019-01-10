@@ -22,11 +22,6 @@ class ViewController: UIViewController {
     }
    
     var dinero = 100
-    //    var dinero: Int
-//    init(dinero: Int) {
-//        self.dinero = dinero
-//    }
-    
     
     @IBAction func testButton(_ sender: UIButton) {
         dinero += 10
@@ -45,7 +40,7 @@ class ViewController: UIViewController {
     
     @IBOutlet weak var dineroLabel: UILabel!
     @IBOutlet weak var revenueLabel: UILabel!
-    //Por hacer: un class que se pueda llamar en cualquier vista de las funciones de abajo
+    
     func saveDinero() {
         defaults.set(dinero, forKey: Keys.totalBalance)
         dinero = defaults.integer(forKey: Keys.totalBalance)
