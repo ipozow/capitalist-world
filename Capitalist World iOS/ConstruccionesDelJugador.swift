@@ -10,8 +10,15 @@ import Foundation
 import UIKit
 
 class ConstruccionesDelJugador: UIViewController {
-    var tiendas = [""]
+    var tiendas = ["A", "B", "C"]
+    @IBOutlet weak var pickerView: UIPickerView!
     @IBAction func seleccionarButtonTapped(_ sender: UIButton) {
+    }
+
+    override func viewDidLoad() {
+        super.viewDidLoad()
+        pickerView.delegate = self
+        pickerView.dataSource = self
     }
 }
 

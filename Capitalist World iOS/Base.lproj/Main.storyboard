@@ -283,6 +283,9 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Me-wf-SH2"/>
                     </view>
+                    <connections>
+                        <outlet property="pickerView" destination="yLC-TY-Z1W" id="c6G-IX-q0h"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="5F3-Gh-1ni" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
