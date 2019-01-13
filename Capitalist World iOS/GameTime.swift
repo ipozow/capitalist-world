@@ -21,5 +21,13 @@ class GameTime {
 }
 
 func sellStockWhenAvailable() {
-    
+    if Comprar().appleSeedsData.stock >= 10 {
+        Comprar().appleSeedsData.stock -= 10
+    }
+    if Comprar().applesData.stock >= 10 {
+        Comprar().applesData.stock -= 10
+    }
 }
+
+let timeBetweenSales = 5
+

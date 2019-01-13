@@ -17,7 +17,7 @@ class Comprar: UIViewController, UICollectionViewDelegate, UICollectionViewDataS
     @IBOutlet weak var collectionView: UICollectionView!
     
     let products = ["apple", "seeds"]
-
+    
     let productImages: [UIImage] = [
         UIImage(named: "apple")!,
         UIImage(named: "seeds")!,
