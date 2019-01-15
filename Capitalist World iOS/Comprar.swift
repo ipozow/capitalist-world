@@ -86,32 +86,34 @@ class Comprar: UIViewController, UICollectionViewDelegate, UICollectionViewDataS
 
     
     @IBAction func productButtonTapped(_ sender: UIButton) {
-//        for product in products {
-//            if product. == 0 {
-//                applesData.stock += cantidadMultiplier
-//                ViewController().dinero -= applesData.price * cantidadMultiplier
-//                ViewController().saveDinero()
-//                userAvailableStockLabel.text = "\(applesData.stock)"
-//            } else {
-//                appleSeedsData.stock += cantidadMultiplier
-//                ViewController().dinero -= appleSeedsData.price * cantidadMultiplier
-//                ViewController().saveDinero()
-//                userAvailableStockLabel.text = "\(appleSeedsData.stock)"
-//            }
-//        }
-        if products.count == 0 {
-            applesData.stock += cantidadMultiplier
-            ViewController().dinero -= applesData.price * cantidadMultiplier
-            ViewController().saveDinero()
-            userAvailableStockLabel.text = "\(applesData.stock)"
-        } else {
-            appleSeedsData.stock += cantidadMultiplier
-            ViewController().dinero -= appleSeedsData.price * cantidadMultiplier
-            ViewController().saveDinero()
-            userAvailableStockLabel.text = "\(appleSeedsData.stock)"
+        for product in products {
+            if product == "apple" {
+                if dinero >= (applesData.price * cantidadMultiplier) {
+                    applesData.stock += cantidadMultiplier
+                    dinero -= applesData.price * cantidadMultiplier
+                    saveDinero()
+                    userAvailableStockLabel.text = "\(applesData.stock)"
+                } else {
+                    let alert = UIAlertController(title: "Dinero insuficiente", message: "Necesitas $ \((applesData.price * cantidadMultiplier) - dinero) para comprar esto", preferredStyle: .alert)
+                    alert.addAction(UIAlertAction(title: NSLocalizedString("OK", comment: "Default action"), style: .default, handler: nil))
+                    self.present(alert, animated: true, completion: nil)
+                }
+                
+            } else if product == "seeds" {
+                if dinero >= (appleSeedsData.price * cantidadMultiplier) {
+                    appleSeedsData.stock += cantidadMultiplier
+                    dinero -= appleSeedsData.price * cantidadMultiplier
+                    saveDinero()
+                    userAvailableStockLabel.text = "\(appleSeedsData.stock)"
+                } else {
+                    let alert = UIAlertController(title: "Dinero insuficiente", message: "Necesitas $ \((appleSeedsData.price * cantidadMultiplier) - dinero) para comprar esto", preferredStyle: .alert)
+                    alert.addAction(UIAlertAction(title: NSLocalizedString("OK", comment: "Default action"), style: .default, handler: nil))
+                    self.present(alert, animated: true, completion: nil)
+                }
+            }
         }
         
-        print(ViewController().dinero)
+        print(dinero)
         print(appleSeedsData.stock)
         print(applesData.stock)
     }

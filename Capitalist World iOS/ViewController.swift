@@ -12,16 +12,28 @@ import UIKit
 
 var dineroShared = ViewController()
 
+var dinero = 100
+
+let defaults = UserDefaults.standard
+
+struct Keys {
+    static let totalBalance = "totalBalance"
+}
+
+func saveDinero() {
+    defaults.set(dinero, forKey: Keys.totalBalance)
+    dinero = defaults.integer(forKey: Keys.totalBalance)
+}
 
 class ViewController: UIViewController {
     
-    let defaults = UserDefaults.standard
+    //let defaults = UserDefaults.standard
     
-    struct Keys {
-        static let totalBalance = "totalBalance"
-    }
+//    struct Keys {
+//        static let totalBalance = "totalBalance"
+//    }
    
-    var dinero = 100
+    //var dinero = 100
     
     @IBAction func testButton(_ sender: UIButton) {
         dinero += 10
@@ -41,10 +53,7 @@ class ViewController: UIViewController {
     @IBOutlet weak var dineroLabel: UILabel!
     @IBOutlet weak var revenueLabel: UILabel!
     
-    func saveDinero() {
-        defaults.set(dinero, forKey: Keys.totalBalance)
-        dinero = defaults.integer(forKey: Keys.totalBalance)
-    }
+    
     func checkSavedDinero() {
         
         dineroLabel.text = "\(dinero)"
