@@ -83,7 +83,22 @@ class Comprar: UIViewController, UICollectionViewDelegate, UICollectionViewDataS
         defaults.set(appleSeedsData.stock, forKey: Keys.totalStock)
     }
     
+
+    
     @IBAction func productButtonTapped(_ sender: UIButton) {
+//        for product in products {
+//            if product. == 0 {
+//                applesData.stock += cantidadMultiplier
+//                ViewController().dinero -= applesData.price * cantidadMultiplier
+//                ViewController().saveDinero()
+//                userAvailableStockLabel.text = "\(applesData.stock)"
+//            } else {
+//                appleSeedsData.stock += cantidadMultiplier
+//                ViewController().dinero -= appleSeedsData.price * cantidadMultiplier
+//                ViewController().saveDinero()
+//                userAvailableStockLabel.text = "\(appleSeedsData.stock)"
+//            }
+//        }
         if products.count == 0 {
             applesData.stock += cantidadMultiplier
             ViewController().dinero -= applesData.price * cantidadMultiplier

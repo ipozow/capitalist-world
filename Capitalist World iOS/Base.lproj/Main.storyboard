@@ -269,6 +269,7 @@
                                 <state key="normal" title="Seleccionar"/>
                                 <connections>
                                     <action selector="seleccionarButtonTapped:" destination="css-da-Sj7" eventType="touchUpInside" id="wgv-fB-uiQ"/>
+                                    <segue destination="ZQp-Je-ma0" kind="show" id="SVA-Ky-dOU"/>
                                 </connections>
                             </button>
                         </subviews>
