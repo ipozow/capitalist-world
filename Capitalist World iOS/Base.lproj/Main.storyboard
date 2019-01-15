@@ -178,7 +178,10 @@
                                                     <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="90" id="Xfm-8l-DJd"/>
                                                     <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="90" id="tKz-1K-ZfI"/>
                                                 </constraints>
-                                                <state key="normal" title="Button"/>
+                                                <state key="normal" title="Tienda"/>
+                                                <connections>
+                                                    <segue destination="ZQp-Je-ma0" kind="show" id="cJI-gL-BEY"/>
+                                                </connections>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="NJf-T0-eWf">
                                                 <rect key="frame" x="90" y="0.0" width="90" height="90"/>
@@ -436,7 +439,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Y1Y-8B-Dz5" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1213" y="1887"/>
+            <point key="canvasLocation" x="1213" y="1814"/>
         </scene>
         <!--Granja-->
         <scene sceneID="kcQ-I6-Y4b">
@@ -584,7 +587,9 @@
         </scene>
     </scenes>
     <inferredMetricsTieBreakers>
+        <segue reference="Qll-e5-1fQ"/>
+        <segue reference="cJI-gL-BEY"/>
         <segue reference="rrd-gk-6vj"/>
-        <segue reference="2rh-fF-uJs"/>
+        <segue reference="RJX-Bq-b55"/>
     </inferredMetricsTieBreakers>
 </document>

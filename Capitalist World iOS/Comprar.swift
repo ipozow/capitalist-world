@@ -119,3 +119,4 @@ class Comprar: UIViewController, UICollectionViewDelegate, UICollectionViewDataS
     }
     
 }
+
