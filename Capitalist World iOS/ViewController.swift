@@ -45,6 +45,12 @@ class ViewController: UIViewController {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
         checkSavedDinero()
+        dineroLabel.layer.cornerRadius = 8
+        dineroLabel.layer.masksToBounds = true;
+        revenueLabel.layer.cornerRadius = 8
+        revenueLabel.layer.masksToBounds = true;
+        másEstadísticasLabel.layer.cornerRadius = 8
+        másEstadísticasLabel.layer.masksToBounds = true;
     }
     
     @IBAction func venderTransitionButton(_ sender: UIButton) {
@@ -52,7 +58,7 @@ class ViewController: UIViewController {
     
     @IBOutlet weak var dineroLabel: UILabel!
     @IBOutlet weak var revenueLabel: UILabel!
-    
+    @IBOutlet weak var másEstadísticasLabel: UILabel!
     
     func checkSavedDinero() {
         
