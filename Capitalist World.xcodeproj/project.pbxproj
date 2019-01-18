@@ -28,6 +28,7 @@
 		91A2580821DB9D4A007B87C3 /* GameTime.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91A2580721DB9D4A007B87C3 /* GameTime.swift */; };
 		91AA97B021E245FC00F0EFBA /* ConstruccionesDelJugador.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91AA97AF21E245FC00F0EFBA /* ConstruccionesDelJugador.swift */; };
 		91CD247721D011CB0083B222 /* Construir.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91CD247621D011CB0083B222 /* Construir.swift */; };
+		91D8267921F22FC600320CB8 /* ConstruirCollectionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91D8267821F22FC600320CB8 /* ConstruirCollectionView.swift */; };
 		91E243A221CD2229008ACD02 /* Comprar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91E243A121CD2229008ACD02 /* Comprar.swift */; };
 		91E243A421CD229C008ACD02 /* Vender.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91E243A321CD229C008ACD02 /* Vender.swift */; };
 /* End PBXBuildFile section */
@@ -56,6 +57,7 @@
 		91A2580721DB9D4A007B87C3 /* GameTime.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameTime.swift; sourceTree = "<group>"; };
 		91AA97AF21E245FC00F0EFBA /* ConstruccionesDelJugador.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConstruccionesDelJugador.swift; sourceTree = "<group>"; };
 		91CD247621D011CB0083B222 /* Construir.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Construir.swift; sourceTree = "<group>"; };
+		91D8267821F22FC600320CB8 /* ConstruirCollectionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConstruirCollectionView.swift; sourceTree = "<group>"; };
 		91E243A121CD2229008ACD02 /* Comprar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Comprar.swift; sourceTree = "<group>"; };
 		91E243A321CD229C008ACD02 /* Vender.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Vender.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -122,6 +124,7 @@
 				91E243A121CD2229008ACD02 /* Comprar.swift */,
 				91E243A321CD229C008ACD02 /* Vender.swift */,
 				910596BD219E43E300657EFA /* Main.storyboard */,
+				91D8267A21F22FCE00320CB8 /* CollectionViews */,
 				91AA97AF21E245FC00F0EFBA /* ConstruccionesDelJugador.swift */,
 				9133B56221DE8D5B00C21CE2 /* CollectionViewCell.swift */,
 				91CD247621D011CB0083B222 /* Construir.swift */,
@@ -154,6 +157,14 @@
 				910596DF219E43E300657EFA /* Info.plist */,
 			);
 			path = "Capitalist World macOS";
+			sourceTree = "<group>";
+		};
+		91D8267A21F22FCE00320CB8 /* CollectionViews */ = {
+			isa = PBXGroup;
+			children = (
+				91D8267821F22FC600320CB8 /* ConstruirCollectionView.swift */,
+			);
+			path = CollectionViews;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -296,6 +307,7 @@
 				9113679921CDB4AF00694B2C /* StockData.swift in Sources */,
 				911F731B21C30C3D00E78F81 /* ViewController.swift in Sources */,
 				910596E0219E43E300657EFA /* GameController.swift in Sources */,
+				91D8267921F22FC600320CB8 /* ConstruirCollectionView.swift in Sources */,
 				910596BA219E43E300657EFA /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
