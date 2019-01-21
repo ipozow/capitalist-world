@@ -18,9 +18,6 @@
                         <rect key="frame" x="0.0" y="0.0" width="812" height="375"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
-                            <stackView opaque="NO" contentMode="scaleToFill" spacing="17" translatesAutoresizingMaskIntoConstraints="NO" id="J97-fq-P0W">
-                                <rect key="frame" x="521" y="176" width="64" height="30"/>
-                            </stackView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Z9w-9P-bu2">
                                 <rect key="frame" x="325" y="0.0" width="76" height="30"/>
                                 <state key="normal" title="test button"/>
@@ -123,9 +120,7 @@ construcciones</string>
                             <constraint firstItem="h6W-AC-Gii" firstAttribute="top" secondItem="Oww-36-XfB" secondAttribute="bottom" constant="22" id="3UM-gi-yqL"/>
                             <constraint firstItem="Z9w-9P-bu2" firstAttribute="leading" secondItem="zoj-Z5-qkG" secondAttribute="leading" constant="281" id="6nN-5u-Or5"/>
                             <constraint firstItem="3ai-Bk-FCD" firstAttribute="top" secondItem="h6W-AC-Gii" secondAttribute="bottom" constant="20" id="Aks-g9-vAX"/>
-                            <constraint firstItem="J97-fq-P0W" firstAttribute="leading" secondItem="lRf-gr-Ahf" secondAttribute="leading" constant="521" id="Cap-yv-ddi"/>
                             <constraint firstItem="h6W-AC-Gii" firstAttribute="leading" secondItem="3ai-Bk-FCD" secondAttribute="leading" id="D10-jv-ULb"/>
-                            <constraint firstItem="zoj-Z5-qkG" firstAttribute="trailing" secondItem="J97-fq-P0W" secondAttribute="trailing" constant="183" id="Ehz-oo-wMm"/>
                             <constraint firstItem="zoj-Z5-qkG" firstAttribute="bottom" secondItem="3ai-Bk-FCD" secondAttribute="bottom" constant="23" id="En9-ax-kSI"/>
                             <constraint firstItem="h6W-AC-Gii" firstAttribute="trailing" secondItem="3ai-Bk-FCD" secondAttribute="trailing" id="GXk-Uh-F8q"/>
                             <constraint firstAttribute="trailingMargin" secondItem="A9w-C6-vAJ" secondAttribute="trailing" constant="-25" id="Gzc-8C-cUm"/>
@@ -146,7 +141,6 @@ construcciones</string>
                             <constraint firstItem="zoj-Z5-qkG" firstAttribute="bottom" secondItem="5sC-6k-CNu" secondAttribute="bottom" constant="34" id="fMk-sw-ZOR"/>
                             <constraint firstItem="Oww-36-XfB" firstAttribute="leading" secondItem="lRf-gr-Ahf" secondAttribute="leadingMargin" id="gF4-Eu-ubK"/>
                             <constraint firstItem="A9w-C6-vAJ" firstAttribute="top" secondItem="zoj-Z5-qkG" secondAttribute="top" constant="57" id="h30-oY-r4W"/>
-                            <constraint firstItem="J97-fq-P0W" firstAttribute="top" secondItem="gdx-s3-hfz" secondAttribute="bottom" constant="19" id="hOP-Tp-z1p"/>
                             <constraint firstItem="RfX-XP-mDN" firstAttribute="leading" secondItem="zoj-Z5-qkG" secondAttribute="leading" constant="58" id="k75-9j-jiH"/>
                             <constraint firstItem="A9w-C6-vAJ" firstAttribute="leading" secondItem="cla-mo-MJp" secondAttribute="leading" id="s02-6w-a3T"/>
                             <constraint firstItem="gdx-s3-hfz" firstAttribute="leading" secondItem="5sC-6k-CNu" secondAttribute="leading" id="tpD-GX-pCM"/>
@@ -154,7 +148,6 @@ construcciones</string>
                             <constraint firstItem="A9w-C6-vAJ" firstAttribute="leading" secondItem="gdx-s3-hfz" secondAttribute="trailing" constant="40" id="uGV-aF-USN"/>
                             <constraint firstItem="RfX-XP-mDN" firstAttribute="top" secondItem="Oww-36-XfB" secondAttribute="bottom" constant="76" id="ucC-bo-ZNE"/>
                             <constraint firstItem="pAO-jN-PUf" firstAttribute="top" secondItem="zoj-Z5-qkG" secondAttribute="top" constant="98" id="wrl-0n-Sml"/>
-                            <constraint firstItem="5sC-6k-CNu" firstAttribute="top" secondItem="J97-fq-P0W" secondAttribute="bottom" constant="14" id="zFT-qq-gf5"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="zoj-Z5-qkG"/>
                     </view>
@@ -205,14 +198,14 @@ construcciones</string>
 </string>
                                                     </state>
                                                 </button>
-                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="manutenciónLabel" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Kyq-hc-UZ1">
-                                                    <rect key="frame" x="26" y="102" width="122" height="19"/>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="CostoLabel" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="rl4-bI-Ebj">
+                                                    <rect key="frame" x="49" y="82" width="76" height="19"/>
                                                     <fontDescription key="fontDescription" name="HelveticaNeue-Thin" family="Helvetica Neue" pointSize="16"/>
                                                     <color key="textColor" white="0.0" alpha="0.63128745720000001" colorSpace="custom" customColorSpace="calibratedWhite"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
-                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="CostoLabel" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="rl4-bI-Ebj">
-                                                    <rect key="frame" x="49" y="74" width="76" height="19"/>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="manutenciónLabel" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Kyq-hc-UZ1">
+                                                    <rect key="frame" x="26" y="110" width="122" height="19"/>
                                                     <fontDescription key="fontDescription" name="HelveticaNeue-Thin" family="Helvetica Neue" pointSize="16"/>
                                                     <color key="textColor" white="0.0" alpha="0.63128745720000001" colorSpace="custom" customColorSpace="calibratedWhite"/>
                                                     <nil key="highlightedColor"/>
@@ -221,6 +214,8 @@ construcciones</string>
                                         </view>
                                         <constraints>
                                             <constraint firstItem="Kyq-hc-UZ1" firstAttribute="top" secondItem="rl4-bI-Ebj" secondAttribute="bottom" constant="9" id="30E-2g-mB4"/>
+                                            <constraint firstItem="Kyq-hc-UZ1" firstAttribute="top" secondItem="rl4-bI-Ebj" secondAttribute="bottom" constant="9" id="3lw-5J-bUJ"/>
+                                            <constraint firstAttribute="bottom" secondItem="Kyq-hc-UZ1" secondAttribute="bottom" constant="5" id="4qG-Xu-fdd"/>
                                             <constraint firstItem="wbI-4k-104" firstAttribute="top" secondItem="2sK-ke-e9G" secondAttribute="top" id="JKW-mC-Xcn"/>
                                             <constraint firstItem="rl4-bI-Ebj" firstAttribute="top" secondItem="2sK-ke-e9G" secondAttribute="topMargin" constant="74" id="gCY-sa-p1p"/>
                                             <constraint firstAttribute="bottom" secondItem="wbI-4k-104" secondAttribute="bottom" id="gbS-F8-JDC"/>
@@ -232,7 +227,7 @@ construcciones</string>
                                         <connections>
                                             <outlet property="costoLabel" destination="rl4-bI-Ebj" id="3nq-au-4KN"/>
                                             <outlet property="estructuraButton" destination="wbI-4k-104" id="8ek-qA-BI2"/>
-                                            <outlet property="manutenciónLabel" destination="Kyq-hc-UZ1" id="jZv-Gw-YJv"/>
+                                            <outlet property="manutenciónLabel" destination="Kyq-hc-UZ1" id="dJy-jw-3JS"/>
                                         </connections>
                                     </collectionViewCell>
                                 </cells>
