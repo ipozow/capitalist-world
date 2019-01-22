@@ -9,6 +9,9 @@
 import Foundation
 import UIKit
 
+var applesData = ApplesStock(stock: 0, price: 10)
+var appleSeedsData = AppleSeedsStock(stock: 0, price: 5)
+
 class Comprar: UIViewController, UICollectionViewDelegate, UICollectionViewDataSource {
     
     //gestos para volver al ViewController
@@ -69,8 +72,7 @@ class Comprar: UIViewController, UICollectionViewDelegate, UICollectionViewDataS
     
     var cantidadMultiplier = 1
     
-    var applesData = ApplesStock(stock: 0, price: 10)
-    var appleSeedsData = AppleSeedsStock(stock: 0, price: 5)
+  
     
     let defaults = UserDefaults.standard
     

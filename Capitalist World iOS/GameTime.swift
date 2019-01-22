@@ -16,8 +16,19 @@ class GameTime {
             return
         }
         elapsedTime = startGameTime.timeIntervalSinceNow
-        debugPrint(elapsedTime)
+        
     }
+    
+    var time = NSTimeIntervalSince1970
+    
+    func sellWhenTime() {
+        defaults.set(time, forKey: key)
+        time = defaults.double(forKey: key)
+        if NSTimeIntervalSince1970 - time >= 1 {
+            sellStockWhenAvailable()
+        }
+    }
+
     var timestand: Double!
     let defaults = UserDefaults.standard
     let key = "timeStarted"
@@ -26,15 +37,15 @@ class GameTime {
         timestand = Date().timeIntervalSinceReferenceDate
     }
     
+
     func sellStockWhenAvailable() {
-        if Comprar().appleSeedsData.stock >= 10 {
-            Comprar().appleSeedsData.stock -= 10
+        if appleSeedsData.stock >= 10 {
+            appleSeedsData.stock -= 10
         }
-        if Comprar().applesData.stock >= 10 {
-            Comprar().applesData.stock -= 10
+        if applesData.stock >= 10 {
+            applesData.stock -= 10
         }
-
-
+        print("hello")
     }
 
 }

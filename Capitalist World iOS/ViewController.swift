@@ -28,9 +28,10 @@ func saveDinero() {
 class ViewController: UIViewController {
     
     @IBAction func testButton(_ sender: UIButton) {
-        dinero += 10
+        dinero += 1000
         saveDinero()
         checkSavedDinero()
+        GameTime().sellWhenTime()
     }
     
     override func viewDidLoad() {
