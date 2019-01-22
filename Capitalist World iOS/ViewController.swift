@@ -13,6 +13,7 @@ import UIKit
 var dineroShared = ViewController()
 
 var dinero = 100
+var revenue = 0
 
 let defaults = UserDefaults.standard
 
@@ -45,6 +46,9 @@ class ViewController: UIViewController {
         construirButton.buttonStyle()
         exportarButton.buttonStyle()
         importarButton.buttonStyle()
+
+        setRevenue(amount: 5)
+        startRevenue() // <---- Esto hace la magia que
     }
     
     @IBAction func venderTransitionButton(_ sender: UIButton) {
@@ -61,8 +65,24 @@ class ViewController: UIViewController {
     @IBOutlet weak var importarButton: UIButton!
     
     func checkSavedDinero() {
-        
         dineroLabel.text = "\(dinero)"
+    }
+
+    func setRevenue(amount: Int) {
+        revenue = amount
+        revenueLabel.text = "\(amount)"
+    }
+
+    func startRevenue() {
+        Timer.scheduledTimer(withTimeInterval: 1.0, repeats: true) { (_) in
+            self.updateDinero()
+        }
+    }
+
+    func updateDinero() {
+        dinero += revenue
+        saveDinero()
+        checkSavedDinero()
     }
     
 }
