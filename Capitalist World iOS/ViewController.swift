@@ -32,7 +32,6 @@ class ViewController: UIViewController {
         dinero += 1000
         saveDinero()
         checkSavedDinero()
-        GameTime().sellWhenTime()
     }
     
     override func viewDidLoad() {

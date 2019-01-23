@@ -12,11 +12,44 @@ import UIKit
 class Construir: UIViewController, UICollectionViewDelegate, UICollectionViewDataSource {
     
     @IBOutlet weak var estructurasCollectionView: UICollectionView!
+    @IBAction func estructuraButtonTapped(_ sender: UIButton) {
+        createNewView()
+    }
     
     let estructuras = ["Tienda", "Granja", "Fábrica", "Casa", "Departamento", "Centro comercial", "Universidad", "Extracción de recursos naturales", "por definir"]
     
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
         return estructuras.count
+    }
+    
+    var buildingView: UIView!
+    var titleLabel: UILabel!
+    var numbersCollectionView: UICollectionView!
+    
+    func createNewView() {
+        // Initialize views and add them to the ViewController's view
+        buildingView = UIView()
+        buildingView.backgroundColor = .lightGray
+        self.view.addSubview(buildingView)
+        
+        titleLabel = UILabel()
+        titleLabel.text = "Nueva tienda"
+        titleLabel.textAlignment = .center
+        titleLabel.font = UIFont(name: titleLabel.font.fontName, size: 20)
+        buildingView.addSubview(titleLabel)
+        
+        // Set position of views using constraints
+        buildingView.translatesAutoresizingMaskIntoConstraints = false
+        buildingView.leadingAnchor.constraint(equalTo: self.view.leadingAnchor).isActive = true
+        buildingView.topAnchor.constraint(equalTo: self.view.topAnchor).isActive = true
+        buildingView.widthAnchor.constraint(equalTo: self.view.widthAnchor, multiplier: 1).isActive = true
+        buildingView.heightAnchor.constraint(equalTo: self.view.heightAnchor, multiplier: 0.1).isActive = true
+        
+        titleLabel.translatesAutoresizingMaskIntoConstraints = false
+        titleLabel.centerXAnchor.constraint(equalTo: buildingView.centerXAnchor).isActive = true
+        titleLabel.bottomAnchor.constraint(equalTo: buildingView.bottomAnchor).isActive = true
+        titleLabel.widthAnchor.constraint(equalTo: buildingView.widthAnchor, multiplier: 0.4).isActive = true
+        titleLabel.heightAnchor.constraint(equalTo: buildingView.heightAnchor, multiplier: 0.5).isActive = true
     }
     
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
@@ -60,6 +93,8 @@ class Construir: UIViewController, UICollectionViewDelegate, UICollectionViewDat
         cell.layer.masksToBounds = true;
         cell.layer.cornerRadius = 12
         return cell
+        
+
     }
 
 }
