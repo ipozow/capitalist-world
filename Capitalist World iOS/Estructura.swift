@@ -9,6 +9,12 @@
 import Foundation
 import UIKit
 
+struct Estructura {
+    var nombre: String
+    var precio: Int
+    var manutención: Int
+}
+
 class Tienda: UIViewController {
     
 }

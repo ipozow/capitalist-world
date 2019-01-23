@@ -9,11 +9,6 @@
 import Foundation
 import UIKit
 
-struct Estructura {
-    var nombre: String
-    var precio: Int
-}
-
 class Construir: UIViewController, UICollectionViewDelegate, UICollectionViewDataSource {
     
     @IBOutlet weak var estructurasCollectionView: UICollectionView!
@@ -21,9 +16,15 @@ class Construir: UIViewController, UICollectionViewDelegate, UICollectionViewDat
         createNewView()
     }
     
-    let estructuras: [Estructura] = [Estructura(nombre: "Tienda", precio: 10000),
-                                     Estructura(nombre: "Granja", precio: 20000),
-                                     Estructura(nombre: "Fábrica", precio: 40000)] //, "Casa", "Departamento", "Centro comercial", "Universidad", "Extracción de recursos naturales", "por definir"]
+    let estructuras: [Estructura] = [Estructura(nombre: "Tienda", precio: 10000, manutención: 1000),
+                                     Estructura(nombre: "Granja", precio: 20000, manutención: 2000),
+                                     Estructura(nombre: "Fábrica", precio: 40000, manutención: 4000),
+                                     Estructura(nombre: "Casa", precio: 5000, manutención: 100),
+                                     Estructura(nombre: "Departamento", precio: 10000, manutención: 500),
+                                     Estructura(nombre: "Centro comercial", precio: 100000, manutención: 100000),
+                                     Estructura(nombre: "Universidad", precio: 50000, manutención: 10000),
+                                     Estructura(nombre: "Extracción de recursos naturales", precio: 200000, manutención: 100000),
+                                     Estructura(nombre: "por definir", precio: 10000, manutención: 10000)]
     
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
         return estructuras.count
@@ -66,7 +67,7 @@ class Construir: UIViewController, UICollectionViewDelegate, UICollectionViewDat
         cell.estructuraButton.titleLabel?.numberOfLines = 0
         cell.estructuraButton.titleLabel?.adjustsFontSizeToFitWidth = true //por hacer: esto
         cell.costoLabel.text = "$ \(estructuras[indexPath.row].precio)"
-        cell.manutenciónLabel.text = "$ \(estructuras[indexPath.row].precio)"
+        cell.manutenciónLabel.text = "$ \(estructuras[indexPath.row].manutención)"
         
         cell.layer.masksToBounds = true;
         cell.layer.cornerRadius = 12
