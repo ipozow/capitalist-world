@@ -38,13 +38,22 @@ class Construir: UIViewController, UICollectionViewDelegate, UICollectionViewDat
         // Initialize views and add them to the ViewController's view
         buildingView = UIView()
         buildingView.backgroundColor = .lightGray
+        buildingView.frame.origin.y -= 50
         self.view.addSubview(buildingView)
-        
+
         titleLabel = UILabel()
         titleLabel.text = "Nueva tienda"
         titleLabel.textAlignment = .center
         titleLabel.font = UIFont(name: titleLabel.font.fontName, size: 20)
         buildingView.addSubview(titleLabel)
+        UIView.animate(withDuration: 1.0) {
+            self.buildingView.frame.origin.y += 50
+            UIView.animate(withDuration: 1.0, delay: 2.0, animations: {
+                self.buildingView.alpha = 0.0
+            }, completion: { (_) in
+                self.buildingView.removeFromSuperview()
+            })
+        }
         
         // Set position of views using constraints
         buildingView.translatesAutoresizingMaskIntoConstraints = false
