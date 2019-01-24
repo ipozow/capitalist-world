@@ -95,6 +95,8 @@ class Comprar: UIViewController, UICollectionViewDelegate, UICollectionViewDataS
                     dinero -= applesData.price * cantidadMultiplier
                     saveDinero()
                     userAvailableStockLabel.text = "\(applesData.stock)"
+                    print("apple")
+                    break
                 } else {
                     let alert = UIAlertController(title: "Dinero insuficiente", message: "Necesitas $ \((applesData.price * cantidadMultiplier) - dinero) para comprar esto", preferredStyle: .alert)
                     alert.addAction(UIAlertAction(title: NSLocalizedString("OK", comment: "Default action"), style: .default, handler: nil))
@@ -107,6 +109,7 @@ class Comprar: UIViewController, UICollectionViewDelegate, UICollectionViewDataS
                     dinero -= appleSeedsData.price * cantidadMultiplier
                     saveDinero()
                     userAvailableStockLabel.text = "\(appleSeedsData.stock)"
+                    print("seeds")
                 } else {
                     let alert = UIAlertController(title: "Dinero insuficiente", message: "Necesitas $ \((appleSeedsData.price * cantidadMultiplier) - dinero) para comprar esto", preferredStyle: .alert)
                     alert.addAction(UIAlertAction(title: NSLocalizedString("OK", comment: "Default action"), style: .default, handler: nil))
