@@ -14,3 +14,9 @@ class EstructuraTienda: UICollectionViewCell {
     @IBOutlet weak var priceStepper: UIStepper!
     @IBOutlet weak var stockLabel: UILabel!
 }
+
+class AvailableProducts: UICollectionViewCell {
+    
+    @IBOutlet weak var productImage: UIImageView!
+}
+ 

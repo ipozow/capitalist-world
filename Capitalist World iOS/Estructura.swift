@@ -28,6 +28,10 @@ class Tienda: UIViewController, UICollectionViewDelegate, UICollectionViewDataSo
         return shopSellingProducts.count
     }
     
+    @IBAction func imageButtonTapped(_ sender: UIButton) {
+        
+    }
+    //por hacer: que se puedan eliminar los productos al arrastrar la celda hacia abajo
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "Cell", for: indexPath) as! EstructuraTienda
         cell.productImage.image = productImages[indexPath.item]
@@ -37,9 +41,11 @@ class Tienda: UIViewController, UICollectionViewDelegate, UICollectionViewDataSo
         cell.layer.cornerRadius = 16
         
         for _ in shopSellingProducts {
-            if shopSellingProducts.isEmpty == true {
-                cell.productImage.image = addProductImage[indexPath.item]
+            
+            if shopSellingProducts.count == 5 {
+                shopSellingProducts.removeLast()
             }
+
         }
         
         return cell
@@ -66,4 +72,26 @@ class Tienda: UIViewController, UICollectionViewDelegate, UICollectionViewDataSo
         
     }
     
+}
+
+class TiendaSelectorPopUp: UIViewController, UICollectionViewDataSource, UICollectionViewDelegate {
+    
+    @IBOutlet weak var availableProductsCollection: UICollectionView!
+    
+    var productsBought = [""]
+    
+    func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
+        return productsBought.count
+    }
+    
+    @IBAction func productTapped(_ sender: UIButton) {
+    }
+    func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
+        let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "Cell", for: indexPath) as! AvailableProducts
+        cell.layer.borderColor = UIColor.lightGray.cgColor
+        cell.layer.borderWidth = 0.5
+        cell.layer.masksToBounds = true;
+        cell.layer.cornerRadius = 2
+        return cell
+    }
 }
