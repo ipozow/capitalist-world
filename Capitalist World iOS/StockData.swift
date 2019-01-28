@@ -7,7 +7,7 @@
 //
 
 import Foundation
-
+class StockData {
 class AppleSeedsStock {
     var stock: Int
     var price: Int
@@ -24,4 +24,5 @@ class ApplesStock {
         self.stock = stock
         self.price = price
     }
+}
 }
