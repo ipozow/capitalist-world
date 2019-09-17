@@ -34,7 +34,7 @@ class Construir: UIViewController, UICollectionViewDelegate, UICollectionViewDat
     var titleLabel: UILabel!
     var numbersCollectionView: UICollectionView!
     
-    func createNewView() {
+    func createNewView() { //aquí quería hacer una copia del Tienda Scene del Main.storyboard más que un popup. Entonces sería que cada vez que se use esta func se cree una copia del Tienda Scene con sus propios datos, para que así se puedan crear varias tiendas. Ni idea cómo hacer la base de datos. Esta función debería ser capaz de copiar datos, pero no sé cómo hacerlo. Creo que podría hacer que se lean estos datos que se creen al hacer una nueva tienda y el mismo scene, solo que leería datos distintos. En resumen: Tienda Scene como modelo y cargan los datos según la tienda que se seleccione. Ojalá no me olvide de lo que estaba pensando cuando escribí esto porque intenté ser lo más detallado para no olvidarme, y creo que sería gracioso que alguien más vea esto —y que hice un commit solo para esto—. xd
         // Initialize views and add them to the ViewController's view
         buildingView = UIView()
         buildingView.backgroundColor = .lightGray
