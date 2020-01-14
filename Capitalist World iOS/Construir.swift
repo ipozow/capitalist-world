@@ -8,9 +8,27 @@
 
 import Foundation
 import UIKit
+import SQLite
 
 class Construir: UIViewController, UICollectionViewDelegate, UICollectionViewDataSource {
     
+    var database: Connection!
+    
+    let tiendasTable = Table("tiendas")
+    let idTable = Expression<String>("id")
+    let productosTable = Expression<String?>("productos")
+    
+    override func viewDidLoad() {
+        super.viewDidLoad()
+        do {
+            let documentDirectory = try FileManager.default.url(for: .documentDirectory, in: .userDomainMask, appropriateFor: nil, create: true)
+            let fileUrl = documentDirectory.appendingPathComponent("tiendas").appendingPathExtension("sqlite3")
+            let database = try Connection(fileUrl.path)
+            self.database = database
+        } catch {
+            print(error)
+        }
+    }
     @IBOutlet weak var estructurasCollectionView: UICollectionView!
     @IBAction func estructuraButtonTapped(_ sender: UIButton) {
         createNewView()
@@ -34,7 +52,19 @@ class Construir: UIViewController, UICollectionViewDelegate, UICollectionViewDat
     var titleLabel: UILabel!
     var numbersCollectionView: UICollectionView!
     
-    func createNewView() { //aquí quería hacer una copia del Tienda Scene del Main.storyboard más que un popup. Entonces sería que cada vez que se use esta func se cree una copia del Tienda Scene con sus propios datos, para que así se puedan crear varias tiendas. Ni idea cómo hacer la base de datos. Esta función debería ser capaz de copiar datos, pero no sé cómo hacerlo. Creo que podría hacer que se lean estos datos que se creen al hacer una nueva tienda y el mismo scene, solo que leería datos distintos. En resumen: Tienda Scene como modelo y cargan los datos según la tienda que se seleccione. Ojalá no me olvide de lo que estaba pensando cuando escribí esto porque intenté ser lo más detallado para no olvidarme, y creo que sería gracioso que alguien más vea esto —y que hice un commit solo para esto—. xd
+    func createNewView() {
+
+        let createTable = self.tiendasTable.create { (table) in
+            table.column(self.idTable, primaryKey: true)
+            table.column(self.productosTable)
+        }
+        do {
+            try self.database.run(createTable)
+            print("Tabla creada")
+        } catch {
+            print(error)
+        }
+        
         // Initialize views and add them to the ViewController's view
         buildingView = UIView()
         buildingView.backgroundColor = .lightGray
@@ -84,5 +114,25 @@ class Construir: UIViewController, UICollectionViewDelegate, UICollectionViewDat
         
 
     }
-
+    func buildNewStore() {
+        //estaba pensando en poner todo en inglés porque si la definía como «buildNewTienda» sonaba demasiado mal XD
+        let buildStore = self.tiendasTable.insert(self.productosTable <- productosTable)
+        do {
+            try self.database.run(buildStore)
+            print("Tienda creada")
+        } catch {
+            print(error)
+        }
+    }
+    func storeList() {
+        do {
+            let stores = try self.database.prepare(self.tiendasTable)
+            for store in stores {
+                print("Tienda: \(store[self.idTable])")
+            }
+        } catch {
+            print(error)
+        }
+    }
+    
 }
