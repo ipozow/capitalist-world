@@ -1,0 +1,13 @@
+/* 
+  Localizable.strings
+  Capitalist World
+
+  Created by Ignacio Pozo on 30-01-23.
+  
+*/
+
+"cityName" = "Nombre de la ciudad";
+"cityPopulation" = "Población de la ciudad";
+"cityPurchasingPowerIndex" = "Índice de poder adquisitivo de la ciudad";
+"cityArea" = "Área de la ciudad";
+"cityBuildableArea" = "Área construible de la ciudad";

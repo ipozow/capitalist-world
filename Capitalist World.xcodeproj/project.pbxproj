@@ -3,157 +3,35 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 56;
 	objects = {
 
 /* Begin PBXBuildFile section */
-		910596BA219E43E300657EFA /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 910596B9219E43E300657EFA /* AppDelegate.swift */; };
-		910596BF219E43E300657EFA /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 910596BD219E43E300657EFA /* Main.storyboard */; };
-		910596C2219E43E300657EFA /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 910596C0219E43E300657EFA /* LaunchScreen.storyboard */; };
-		910596CB219E43E300657EFA /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 910596CA219E43E300657EFA /* AppDelegate.swift */; };
-		910596CD219E43E300657EFA /* GameViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 910596CC219E43E300657EFA /* GameViewController.swift */; };
-		910596D0219E43E300657EFA /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 910596CE219E43E300657EFA /* Main.storyboard */; };
-		910596D9219E43E300657EFA /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 910596D8219E43E300657EFA /* AppDelegate.swift */; };
-		910596DB219E43E300657EFA /* GameViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 910596DA219E43E300657EFA /* GameViewController.swift */; };
-		910596DE219E43E300657EFA /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 910596DC219E43E300657EFA /* Main.storyboard */; };
-		910596E0219E43E300657EFA /* GameController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 910596AF219E43E000657EFA /* GameController.swift */; };
-		910596E1219E43E300657EFA /* GameController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 910596AF219E43E000657EFA /* GameController.swift */; };
-		910596E2219E43E300657EFA /* GameController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 910596AF219E43E000657EFA /* GameController.swift */; };
-		910596E6219E43E300657EFA /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 910596B1219E43E300657EFA /* Assets.xcassets */; };
-		910596E7219E43E300657EFA /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 910596B1219E43E300657EFA /* Assets.xcassets */; };
-		910596E8219E43E300657EFA /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 910596B1219E43E300657EFA /* Assets.xcassets */; };
-		9113679921CDB4AF00694B2C /* StockData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9113679821CDB4AF00694B2C /* StockData.swift */; };
-		911F731B21C30C3D00E78F81 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 911F731A21C30C3D00E78F81 /* ViewController.swift */; };
-		9133B56321DE8D5B00C21CE2 /* CollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9133B56221DE8D5B00C21CE2 /* CollectionViewCell.swift */; };
-		918E314F21FFB0150058E424 /* GameData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 918E314E21FFB0150058E424 /* GameData.swift */; };
-		91A891B921F9D7450076E766 /* EstructuraTienda.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91A891B821F9D7450076E766 /* EstructuraTienda.swift */; };
-		91AA97B021E245FC00F0EFBA /* ConstruccionesDelJugador.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91AA97AF21E245FC00F0EFBA /* ConstruccionesDelJugador.swift */; };
-		91C0C84223CBC7CE0033FD8B /* SQLite.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 91C0C83423CBC7990033FD8B /* SQLite.framework */; };
-		91C0C84323CBC7CE0033FD8B /* SQLite.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 91C0C83423CBC7990033FD8B /* SQLite.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
-		91C0C84523CBC8280033FD8B /* SQLite.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 91C0C83423CBC7990033FD8B /* SQLite.framework */; };
-		91C39AF721F7E7E1004F01C7 /* Estructura.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91C39AF621F7E7E1004F01C7 /* Estructura.swift */; };
-		91CD247721D011CB0083B222 /* Construir.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91CD247621D011CB0083B222 /* Construir.swift */; };
-		91D8267921F22FC600320CB8 /* ConstruirCollectionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91D8267821F22FC600320CB8 /* ConstruirCollectionView.swift */; };
-		91E243A221CD2229008ACD02 /* Comprar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91E243A121CD2229008ACD02 /* Comprar.swift */; };
-		91E243A421CD229C008ACD02 /* Vender.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91E243A321CD229C008ACD02 /* Vender.swift */; };
+		9152E97229885E8700F57F7D /* Capitalist_WorldApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9152E97129885E8700F57F7D /* Capitalist_WorldApp.swift */; };
+		9152E97429885E8700F57F7D /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9152E97329885E8700F57F7D /* ContentView.swift */; };
+		9152E97629885E8800F57F7D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9152E97529885E8800F57F7D /* Assets.xcassets */; };
+		9152E97929885E8800F57F7D /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9152E97829885E8800F57F7D /* Preview Assets.xcassets */; };
+		9152E9812988603A00F57F7D /* City.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9152E9802988603A00F57F7D /* City.swift */; };
+		9152E98329888C4A00F57F7D /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 9152E98229888C4A00F57F7D /* Localizable.strings */; };
+		9152E98529888FC700F57F7D /* BuildingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9152E98429888FC700F57F7D /* BuildingView.swift */; };
+		9152E9872988998B00F57F7D /* Building.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9152E9862988998B00F57F7D /* Building.swift */; };
 /* End PBXBuildFile section */
 
-/* Begin PBXContainerItemProxy section */
-		91C0C83323CBC7990033FD8B /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 91C0C82923CBC7980033FD8B /* SQLite.xcodeproj */;
-			proxyType = 2;
-			remoteGlobalIDString = EE247AD31C3F04ED00AE3E12;
-			remoteInfo = "SQLite iOS";
-		};
-		91C0C83523CBC7990033FD8B /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 91C0C82923CBC7980033FD8B /* SQLite.xcodeproj */;
-			proxyType = 2;
-			remoteGlobalIDString = EE247ADD1C3F04ED00AE3E12;
-			remoteInfo = "SQLiteTests iOS";
-		};
-		91C0C83723CBC7990033FD8B /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 91C0C82923CBC7980033FD8B /* SQLite.xcodeproj */;
-			proxyType = 2;
-			remoteGlobalIDString = EE247B3C1C3F3ED000AE3E12;
-			remoteInfo = "SQLite Mac";
-		};
-		91C0C83923CBC7990033FD8B /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 91C0C82923CBC7980033FD8B /* SQLite.xcodeproj */;
-			proxyType = 2;
-			remoteGlobalIDString = EE247B451C3F3ED000AE3E12;
-			remoteInfo = "SQLiteTests Mac";
-		};
-		91C0C83B23CBC7990033FD8B /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 91C0C82923CBC7980033FD8B /* SQLite.xcodeproj */;
-			proxyType = 2;
-			remoteGlobalIDString = 03A65E5A1C6BB0F50062603F;
-			remoteInfo = "SQLite tvOS";
-		};
-		91C0C83D23CBC7990033FD8B /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 91C0C82923CBC7980033FD8B /* SQLite.xcodeproj */;
-			proxyType = 2;
-			remoteGlobalIDString = 03A65E631C6BB0F60062603F;
-			remoteInfo = "SQLiteTests tvOS";
-		};
-		91C0C83F23CBC7990033FD8B /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 91C0C82923CBC7980033FD8B /* SQLite.xcodeproj */;
-			proxyType = 2;
-			remoteGlobalIDString = A121AC451CA35C79005A31D1;
-			remoteInfo = "SQLite watchOS";
-		};
-/* End PBXContainerItemProxy section */
-
-/* Begin PBXCopyFilesBuildPhase section */
-		91C0C84423CBC7CE0033FD8B /* Embed Frameworks */ = {
-			isa = PBXCopyFilesBuildPhase;
-			buildActionMask = 2147483647;
-			dstPath = "";
-			dstSubfolderSpec = 10;
-			files = (
-				91C0C84323CBC7CE0033FD8B /* SQLite.framework in Embed Frameworks */,
-			);
-			name = "Embed Frameworks";
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-/* End PBXCopyFilesBuildPhase section */
-
 /* Begin PBXFileReference section */
-		910596AF219E43E000657EFA /* GameController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameController.swift; sourceTree = "<group>"; };
-		910596B1219E43E300657EFA /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		910596B6219E43E300657EFA /* Capitalist World.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Capitalist World.app"; sourceTree = BUILT_PRODUCTS_DIR; };
-		910596B9219E43E300657EFA /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		910596BE219E43E300657EFA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		910596C1219E43E300657EFA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
-		910596C3219E43E300657EFA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		910596C8219E43E300657EFA /* Capitalist World.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Capitalist World.app"; sourceTree = BUILT_PRODUCTS_DIR; };
-		910596CA219E43E300657EFA /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		910596CC219E43E300657EFA /* GameViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameViewController.swift; sourceTree = "<group>"; };
-		910596CF219E43E300657EFA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		910596D1219E43E300657EFA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		910596D6219E43E300657EFA /* Capitalist World.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Capitalist World.app"; sourceTree = BUILT_PRODUCTS_DIR; };
-		910596D8219E43E300657EFA /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		910596DA219E43E300657EFA /* GameViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameViewController.swift; sourceTree = "<group>"; };
-		910596DD219E43E300657EFA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		910596DF219E43E300657EFA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		9113679821CDB4AF00694B2C /* StockData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StockData.swift; sourceTree = "<group>"; };
-		911F731A21C30C3D00E78F81 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		9133B56221DE8D5B00C21CE2 /* CollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CollectionViewCell.swift; sourceTree = "<group>"; };
-		918E314E21FFB0150058E424 /* GameData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameData.swift; sourceTree = "<group>"; };
-		91A891B821F9D7450076E766 /* EstructuraTienda.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EstructuraTienda.swift; sourceTree = "<group>"; };
-		91AA97AF21E245FC00F0EFBA /* ConstruccionesDelJugador.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConstruccionesDelJugador.swift; sourceTree = "<group>"; };
-		91C0C82923CBC7980033FD8B /* SQLite.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = SQLite.xcodeproj; path = "../../../Downloads/SQLite.swift-master/SQLite.xcodeproj"; sourceTree = "<group>"; };
-		91C39AF621F7E7E1004F01C7 /* Estructura.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Estructura.swift; sourceTree = "<group>"; };
-		91CD247621D011CB0083B222 /* Construir.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Construir.swift; sourceTree = "<group>"; };
-		91D8267821F22FC600320CB8 /* ConstruirCollectionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConstruirCollectionView.swift; sourceTree = "<group>"; };
-		91E243A121CD2229008ACD02 /* Comprar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Comprar.swift; sourceTree = "<group>"; };
-		91E243A321CD229C008ACD02 /* Vender.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Vender.swift; sourceTree = "<group>"; };
+		9152E96E29885E8700F57F7D /* Capitalist World.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Capitalist World.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		9152E97129885E8700F57F7D /* Capitalist_WorldApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Capitalist_WorldApp.swift; sourceTree = "<group>"; };
+		9152E97329885E8700F57F7D /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		9152E97529885E8800F57F7D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		9152E97829885E8800F57F7D /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		9152E97A29885E8800F57F7D /* Capitalist_World.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = Capitalist_World.entitlements; sourceTree = "<group>"; };
+		9152E9802988603A00F57F7D /* City.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = City.swift; sourceTree = "<group>"; };
+		9152E98229888C4A00F57F7D /* Localizable.strings */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; path = Localizable.strings; sourceTree = "<group>"; };
+		9152E98429888FC700F57F7D /* BuildingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BuildingView.swift; sourceTree = "<group>"; };
+		9152E9862988998B00F57F7D /* Building.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Building.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		910596B3219E43E300657EFA /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				91C0C84523CBC8280033FD8B /* SQLite.framework in Frameworks */,
-				91C0C84223CBC7CE0033FD8B /* SQLite.framework in Frameworks */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		910596C5219E43E300657EFA /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		910596D3219E43E300657EFA /* Frameworks */ = {
+		9152E96B29885E8700F57F7D /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -163,383 +41,135 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		910596A9219E43E000657EFA = {
+		9152E96529885E8700F57F7D = {
 			isa = PBXGroup;
 			children = (
-				910596AE219E43E000657EFA /* Capitalist World Shared */,
-				910596B8219E43E300657EFA /* Capitalist World iOS */,
-				910596C9219E43E300657EFA /* Capitalist World tvOS */,
-				910596D7219E43E300657EFA /* Capitalist World macOS */,
-				910596B7219E43E300657EFA /* Products */,
-				91C0C82923CBC7980033FD8B /* SQLite.xcodeproj */,
-				91C0C84123CBC7CE0033FD8B /* Frameworks */,
+				9152E97029885E8700F57F7D /* Capitalist World */,
+				9152E96F29885E8700F57F7D /* Products */,
 			);
 			sourceTree = "<group>";
 		};
-		910596AE219E43E000657EFA /* Capitalist World Shared */ = {
+		9152E96F29885E8700F57F7D /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				910596AF219E43E000657EFA /* GameController.swift */,
-				910596B1219E43E300657EFA /* Assets.xcassets */,
-			);
-			path = "Capitalist World Shared";
-			sourceTree = "<group>";
-		};
-		910596B7219E43E300657EFA /* Products */ = {
-			isa = PBXGroup;
-			children = (
-				910596B6219E43E300657EFA /* Capitalist World.app */,
-				910596C8219E43E300657EFA /* Capitalist World.app */,
-				910596D6219E43E300657EFA /* Capitalist World.app */,
+				9152E96E29885E8700F57F7D /* Capitalist World.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		910596B8219E43E300657EFA /* Capitalist World iOS */ = {
+		9152E97029885E8700F57F7D /* Capitalist World */ = {
 			isa = PBXGroup;
 			children = (
-				911F731A21C30C3D00E78F81 /* ViewController.swift */,
-				91E243A121CD2229008ACD02 /* Comprar.swift */,
-				91E243A321CD229C008ACD02 /* Vender.swift */,
-				910596BD219E43E300657EFA /* Main.storyboard */,
-				918E314E21FFB0150058E424 /* GameData.swift */,
-				91D8267A21F22FCE00320CB8 /* CollectionViews */,
-				91AA97AF21E245FC00F0EFBA /* ConstruccionesDelJugador.swift */,
-				9133B56221DE8D5B00C21CE2 /* CollectionViewCell.swift */,
-				91CD247621D011CB0083B222 /* Construir.swift */,
-				91C39AF621F7E7E1004F01C7 /* Estructura.swift */,
-				910596B9219E43E300657EFA /* AppDelegate.swift */,
-				9113679821CDB4AF00694B2C /* StockData.swift */,
-				910596C0219E43E300657EFA /* LaunchScreen.storyboard */,
-				910596C3219E43E300657EFA /* Info.plist */,
+				9152E97129885E8700F57F7D /* Capitalist_WorldApp.swift */,
+				9152E97329885E8700F57F7D /* ContentView.swift */,
+				9152E9862988998B00F57F7D /* Building.swift */,
+				9152E98429888FC700F57F7D /* BuildingView.swift */,
+				9152E9802988603A00F57F7D /* City.swift */,
+				9152E98229888C4A00F57F7D /* Localizable.strings */,
+				9152E97529885E8800F57F7D /* Assets.xcassets */,
+				9152E97A29885E8800F57F7D /* Capitalist_World.entitlements */,
+				9152E97729885E8800F57F7D /* Preview Content */,
 			);
-			path = "Capitalist World iOS";
+			path = "Capitalist World";
 			sourceTree = "<group>";
 		};
-		910596C9219E43E300657EFA /* Capitalist World tvOS */ = {
+		9152E97729885E8800F57F7D /* Preview Content */ = {
 			isa = PBXGroup;
 			children = (
-				910596CA219E43E300657EFA /* AppDelegate.swift */,
-				910596CC219E43E300657EFA /* GameViewController.swift */,
-				910596CE219E43E300657EFA /* Main.storyboard */,
-				910596D1219E43E300657EFA /* Info.plist */,
+				9152E97829885E8800F57F7D /* Preview Assets.xcassets */,
 			);
-			path = "Capitalist World tvOS";
-			sourceTree = "<group>";
-		};
-		910596D7219E43E300657EFA /* Capitalist World macOS */ = {
-			isa = PBXGroup;
-			children = (
-				910596D8219E43E300657EFA /* AppDelegate.swift */,
-				910596DA219E43E300657EFA /* GameViewController.swift */,
-				910596DC219E43E300657EFA /* Main.storyboard */,
-				910596DF219E43E300657EFA /* Info.plist */,
-			);
-			path = "Capitalist World macOS";
-			sourceTree = "<group>";
-		};
-		91C0C82A23CBC7980033FD8B /* Products */ = {
-			isa = PBXGroup;
-			children = (
-				91C0C83423CBC7990033FD8B /* SQLite.framework */,
-				91C0C83623CBC7990033FD8B /* SQLiteTests iOS.xctest */,
-				91C0C83823CBC7990033FD8B /* SQLite.framework */,
-				91C0C83A23CBC7990033FD8B /* SQLiteTests Mac.xctest */,
-				91C0C83C23CBC7990033FD8B /* SQLite.framework */,
-				91C0C83E23CBC7990033FD8B /* SQLiteTests tvOS.xctest */,
-				91C0C84023CBC7990033FD8B /* SQLite.framework */,
-			);
-			name = Products;
-			sourceTree = "<group>";
-		};
-		91C0C84123CBC7CE0033FD8B /* Frameworks */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			name = Frameworks;
-			sourceTree = "<group>";
-		};
-		91D8267A21F22FCE00320CB8 /* CollectionViews */ = {
-			isa = PBXGroup;
-			children = (
-				91D8267821F22FC600320CB8 /* ConstruirCollectionView.swift */,
-				91A891B821F9D7450076E766 /* EstructuraTienda.swift */,
-			);
-			path = CollectionViews;
+			path = "Preview Content";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		910596B5219E43E300657EFA /* Capitalist World iOS */ = {
+		9152E96D29885E8700F57F7D /* Capitalist World */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 910596EB219E43E300657EFA /* Build configuration list for PBXNativeTarget "Capitalist World iOS" */;
+			buildConfigurationList = 9152E97D29885E8800F57F7D /* Build configuration list for PBXNativeTarget "Capitalist World" */;
 			buildPhases = (
-				910596B2219E43E300657EFA /* Sources */,
-				910596B3219E43E300657EFA /* Frameworks */,
-				910596B4219E43E300657EFA /* Resources */,
-				91C0C84423CBC7CE0033FD8B /* Embed Frameworks */,
+				9152E96A29885E8700F57F7D /* Sources */,
+				9152E96B29885E8700F57F7D /* Frameworks */,
+				9152E96C29885E8700F57F7D /* Resources */,
 			);
 			buildRules = (
 			);
 			dependencies = (
 			);
-			name = "Capitalist World iOS";
-			productName = "Capitalist World iOS";
-			productReference = 910596B6219E43E300657EFA /* Capitalist World.app */;
-			productType = "com.apple.product-type.application";
-		};
-		910596C7219E43E300657EFA /* Capitalist World tvOS */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = 910596EE219E43E300657EFA /* Build configuration list for PBXNativeTarget "Capitalist World tvOS" */;
-			buildPhases = (
-				910596C4219E43E300657EFA /* Sources */,
-				910596C5219E43E300657EFA /* Frameworks */,
-				910596C6219E43E300657EFA /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-			);
-			name = "Capitalist World tvOS";
-			productName = "Capitalist World tvOS";
-			productReference = 910596C8219E43E300657EFA /* Capitalist World.app */;
-			productType = "com.apple.product-type.application";
-		};
-		910596D5219E43E300657EFA /* Capitalist World macOS */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = 910596F1219E43E300657EFA /* Build configuration list for PBXNativeTarget "Capitalist World macOS" */;
-			buildPhases = (
-				910596D2219E43E300657EFA /* Sources */,
-				910596D3219E43E300657EFA /* Frameworks */,
-				910596D4219E43E300657EFA /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-			);
-			name = "Capitalist World macOS";
-			productName = "Capitalist World macOS";
-			productReference = 910596D6219E43E300657EFA /* Capitalist World.app */;
+			name = "Capitalist World";
+			productName = "Capitalist World";
+			productReference = 9152E96E29885E8700F57F7D /* Capitalist World.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
-		910596AA219E43E000657EFA /* Project object */ = {
+		9152E96629885E8700F57F7D /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastSwiftUpdateCheck = 1010;
-				LastUpgradeCheck = 1010;
-				ORGANIZATIONNAME = Pozo;
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1420;
+				LastUpgradeCheck = 1420;
 				TargetAttributes = {
-					910596B5219E43E300657EFA = {
-						CreatedOnToolsVersion = 10.1;
-					};
-					910596C7219E43E300657EFA = {
-						CreatedOnToolsVersion = 10.1;
-					};
-					910596D5219E43E300657EFA = {
-						CreatedOnToolsVersion = 10.1;
+					9152E96D29885E8700F57F7D = {
+						CreatedOnToolsVersion = 14.2;
 					};
 				};
 			};
-			buildConfigurationList = 910596AD219E43E000657EFA /* Build configuration list for PBXProject "Capitalist World" */;
-			compatibilityVersion = "Xcode 9.3";
+			buildConfigurationList = 9152E96929885E8700F57F7D /* Build configuration list for PBXProject "Capitalist World" */;
+			compatibilityVersion = "Xcode 14.0";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
 			knownRegions = (
 				en,
 				Base,
 			);
-			mainGroup = 910596A9219E43E000657EFA;
-			productRefGroup = 910596B7219E43E300657EFA /* Products */;
+			mainGroup = 9152E96529885E8700F57F7D;
+			productRefGroup = 9152E96F29885E8700F57F7D /* Products */;
 			projectDirPath = "";
-			projectReferences = (
-				{
-					ProductGroup = 91C0C82A23CBC7980033FD8B /* Products */;
-					ProjectRef = 91C0C82923CBC7980033FD8B /* SQLite.xcodeproj */;
-				},
-			);
 			projectRoot = "";
 			targets = (
-				910596B5219E43E300657EFA /* Capitalist World iOS */,
-				910596C7219E43E300657EFA /* Capitalist World tvOS */,
-				910596D5219E43E300657EFA /* Capitalist World macOS */,
+				9152E96D29885E8700F57F7D /* Capitalist World */,
 			);
 		};
 /* End PBXProject section */
 
-/* Begin PBXReferenceProxy section */
-		91C0C83423CBC7990033FD8B /* SQLite.framework */ = {
-			isa = PBXReferenceProxy;
-			fileType = wrapper.framework;
-			path = SQLite.framework;
-			remoteRef = 91C0C83323CBC7990033FD8B /* PBXContainerItemProxy */;
-			sourceTree = BUILT_PRODUCTS_DIR;
-		};
-		91C0C83623CBC7990033FD8B /* SQLiteTests iOS.xctest */ = {
-			isa = PBXReferenceProxy;
-			fileType = wrapper.cfbundle;
-			path = "SQLiteTests iOS.xctest";
-			remoteRef = 91C0C83523CBC7990033FD8B /* PBXContainerItemProxy */;
-			sourceTree = BUILT_PRODUCTS_DIR;
-		};
-		91C0C83823CBC7990033FD8B /* SQLite.framework */ = {
-			isa = PBXReferenceProxy;
-			fileType = wrapper.framework;
-			path = SQLite.framework;
-			remoteRef = 91C0C83723CBC7990033FD8B /* PBXContainerItemProxy */;
-			sourceTree = BUILT_PRODUCTS_DIR;
-		};
-		91C0C83A23CBC7990033FD8B /* SQLiteTests Mac.xctest */ = {
-			isa = PBXReferenceProxy;
-			fileType = wrapper.cfbundle;
-			path = "SQLiteTests Mac.xctest";
-			remoteRef = 91C0C83923CBC7990033FD8B /* PBXContainerItemProxy */;
-			sourceTree = BUILT_PRODUCTS_DIR;
-		};
-		91C0C83C23CBC7990033FD8B /* SQLite.framework */ = {
-			isa = PBXReferenceProxy;
-			fileType = wrapper.framework;
-			path = SQLite.framework;
-			remoteRef = 91C0C83B23CBC7990033FD8B /* PBXContainerItemProxy */;
-			sourceTree = BUILT_PRODUCTS_DIR;
-		};
-		91C0C83E23CBC7990033FD8B /* SQLiteTests tvOS.xctest */ = {
-			isa = PBXReferenceProxy;
-			fileType = wrapper.cfbundle;
-			path = "SQLiteTests tvOS.xctest";
-			remoteRef = 91C0C83D23CBC7990033FD8B /* PBXContainerItemProxy */;
-			sourceTree = BUILT_PRODUCTS_DIR;
-		};
-		91C0C84023CBC7990033FD8B /* SQLite.framework */ = {
-			isa = PBXReferenceProxy;
-			fileType = wrapper.framework;
-			path = SQLite.framework;
-			remoteRef = 91C0C83F23CBC7990033FD8B /* PBXContainerItemProxy */;
-			sourceTree = BUILT_PRODUCTS_DIR;
-		};
-/* End PBXReferenceProxy section */
-
 /* Begin PBXResourcesBuildPhase section */
-		910596B4219E43E300657EFA /* Resources */ = {
+		9152E96C29885E8700F57F7D /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				910596BF219E43E300657EFA /* Main.storyboard in Resources */,
-				910596C2219E43E300657EFA /* LaunchScreen.storyboard in Resources */,
-				910596E6219E43E300657EFA /* Assets.xcassets in Resources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		910596C6219E43E300657EFA /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				910596D0219E43E300657EFA /* Main.storyboard in Resources */,
-				910596E7219E43E300657EFA /* Assets.xcassets in Resources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		910596D4219E43E300657EFA /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				910596DE219E43E300657EFA /* Main.storyboard in Resources */,
-				910596E8219E43E300657EFA /* Assets.xcassets in Resources */,
+				9152E97929885E8800F57F7D /* Preview Assets.xcassets in Resources */,
+				9152E98329888C4A00F57F7D /* Localizable.strings in Resources */,
+				9152E97629885E8800F57F7D /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
-		910596B2219E43E300657EFA /* Sources */ = {
+		9152E96A29885E8700F57F7D /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				91A891B921F9D7450076E766 /* EstructuraTienda.swift in Sources */,
-				91E243A421CD229C008ACD02 /* Vender.swift in Sources */,
-				91E243A221CD2229008ACD02 /* Comprar.swift in Sources */,
-				91C39AF721F7E7E1004F01C7 /* Estructura.swift in Sources */,
-				9133B56321DE8D5B00C21CE2 /* CollectionViewCell.swift in Sources */,
-				918E314F21FFB0150058E424 /* GameData.swift in Sources */,
-				91AA97B021E245FC00F0EFBA /* ConstruccionesDelJugador.swift in Sources */,
-				91CD247721D011CB0083B222 /* Construir.swift in Sources */,
-				9113679921CDB4AF00694B2C /* StockData.swift in Sources */,
-				911F731B21C30C3D00E78F81 /* ViewController.swift in Sources */,
-				910596E0219E43E300657EFA /* GameController.swift in Sources */,
-				91D8267921F22FC600320CB8 /* ConstruirCollectionView.swift in Sources */,
-				910596BA219E43E300657EFA /* AppDelegate.swift in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		910596C4219E43E300657EFA /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				910596CD219E43E300657EFA /* GameViewController.swift in Sources */,
-				910596E1219E43E300657EFA /* GameController.swift in Sources */,
-				910596CB219E43E300657EFA /* AppDelegate.swift in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		910596D2219E43E300657EFA /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				910596DB219E43E300657EFA /* GameViewController.swift in Sources */,
-				910596E2219E43E300657EFA /* GameController.swift in Sources */,
-				910596D9219E43E300657EFA /* AppDelegate.swift in Sources */,
+				9152E97429885E8700F57F7D /* ContentView.swift in Sources */,
+				9152E97229885E8700F57F7D /* Capitalist_WorldApp.swift in Sources */,
+				9152E9872988998B00F57F7D /* Building.swift in Sources */,
+				9152E98529888FC700F57F7D /* BuildingView.swift in Sources */,
+				9152E9812988603A00F57F7D /* City.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
-/* Begin PBXVariantGroup section */
-		910596BD219E43E300657EFA /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				910596BE219E43E300657EFA /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
-		910596C0219E43E300657EFA /* LaunchScreen.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				910596C1219E43E300657EFA /* Base */,
-			);
-			name = LaunchScreen.storyboard;
-			sourceTree = "<group>";
-		};
-		910596CE219E43E300657EFA /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				910596CF219E43E300657EFA /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
-		910596DC219E43E300657EFA /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				910596DD219E43E300657EFA /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
-/* End PBXVariantGroup section */
-
 /* Begin XCBuildConfiguration section */
-		910596E9219E43E300657EFA /* Debug */ = {
+		9152E97B29885E8800F57F7D /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
-				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
-				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
 				CLANG_ENABLE_MODULES = YES;
 				CLANG_ENABLE_OBJC_ARC = YES;
 				CLANG_ENABLE_OBJC_WEAK = YES;
@@ -558,6 +188,7 @@
 				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
 				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
 				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
 				CLANG_WARN_STRICT_PROTOTYPES = YES;
 				CLANG_WARN_SUSPICIOUS_MOVE = YES;
@@ -582,22 +213,23 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 13.1;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 			};
 			name = Debug;
 		};
-		910596EA219E43E300657EFA /* Release */ = {
+		9152E97C29885E8800F57F7D /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
-				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
-				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
 				CLANG_ENABLE_MODULES = YES;
 				CLANG_ENABLE_OBJC_ARC = YES;
 				CLANG_ENABLE_OBJC_WEAK = YES;
@@ -616,6 +248,7 @@
 				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
 				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
 				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
 				CLANG_WARN_STRICT_PROTOTYPES = YES;
 				CLANG_WARN_SUSPICIOUS_MOVE = YES;
@@ -634,181 +267,91 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 13.1;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
+				SDKROOT = macosx;
 				SWIFT_COMPILATION_MODE = wholemodule;
 				SWIFT_OPTIMIZATION_LEVEL = "-O";
 			};
 			name = Release;
 		};
-		910596EC219E43E300657EFA /* Debug */ = {
+		9152E97E29885E8800F57F7D /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				CODE_SIGN_IDENTITY = "iPhone Developer";
-				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = HKD2VCZ3TM;
-				INFOPLIST_FILE = "Capitalist World iOS/Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-				);
-				PRODUCT_BUNDLE_IDENTIFIER = "com.pozo.Capitalist-World";
-				PRODUCT_NAME = "Capitalist World";
-				SDKROOT = iphoneos;
-				SWIFT_VERSION = 4.2;
-				TARGETED_DEVICE_FAMILY = "1,2";
-			};
-			name = Debug;
-		};
-		910596ED219E43E300657EFA /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				CODE_SIGN_IDENTITY = "iPhone Developer";
-				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = HKD2VCZ3TM;
-				INFOPLIST_FILE = "Capitalist World iOS/Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-				);
-				PRODUCT_BUNDLE_IDENTIFIER = "com.pozo.Capitalist-World";
-				PRODUCT_NAME = "Capitalist World";
-				SDKROOT = iphoneos;
-				SWIFT_VERSION = 4.2;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VALIDATE_PRODUCT = YES;
-			};
-			name = Release;
-		};
-		910596EF219E43E300657EFA /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ASSETCATALOG_COMPILER_APPICON_NAME = "tvOS App Icon & Top Shelf Image";
-				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = "tvOS LaunchImage";
-				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = E33Q3EJD56;
-				INFOPLIST_FILE = "Capitalist World tvOS/Info.plist";
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-				);
-				PRODUCT_BUNDLE_IDENTIFIER = "com.pozo.Capitalist-World";
-				PRODUCT_NAME = "Capitalist World";
-				SDKROOT = appletvos;
-				SWIFT_VERSION = 4.2;
-				TARGETED_DEVICE_FAMILY = 3;
-				TVOS_DEPLOYMENT_TARGET = 12.1;
-			};
-			name = Debug;
-		};
-		910596F0219E43E300657EFA /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ASSETCATALOG_COMPILER_APPICON_NAME = "tvOS App Icon & Top Shelf Image";
-				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = "tvOS LaunchImage";
-				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = E33Q3EJD56;
-				INFOPLIST_FILE = "Capitalist World tvOS/Info.plist";
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-				);
-				PRODUCT_BUNDLE_IDENTIFIER = "com.pozo.Capitalist-World";
-				PRODUCT_NAME = "Capitalist World";
-				SDKROOT = appletvos;
-				SWIFT_VERSION = 4.2;
-				TARGETED_DEVICE_FAMILY = 3;
-				TVOS_DEPLOYMENT_TARGET = 12.1;
-				VALIDATE_PRODUCT = YES;
-			};
-			name = Release;
-		};
-		910596F2219E43E300657EFA /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				CODE_SIGN_IDENTITY = "-";
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = "Capitalist World/Capitalist_World.entitlements";
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"Capitalist World/Preview Content\"";
 				DEVELOPMENT_TEAM = E33Q3EJD56;
-				INFOPLIST_FILE = "Capitalist World macOS/Info.plist";
+				ENABLE_HARDENED_RUNTIME = YES;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/../Frameworks",
 				);
-				MACOSX_DEPLOYMENT_TARGET = 10.14;
+				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = "com.pozo.Capitalist-World";
-				PRODUCT_NAME = "Capitalist World";
-				SDKROOT = macosx;
-				SWIFT_VERSION = 4.2;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
 			};
 			name = Debug;
 		};
-		910596F3219E43E300657EFA /* Release */ = {
+		9152E97F29885E8800F57F7D /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				CODE_SIGN_IDENTITY = "-";
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = "Capitalist World/Capitalist_World.entitlements";
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"Capitalist World/Preview Content\"";
 				DEVELOPMENT_TEAM = E33Q3EJD56;
-				INFOPLIST_FILE = "Capitalist World macOS/Info.plist";
+				ENABLE_HARDENED_RUNTIME = YES;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/../Frameworks",
 				);
-				MACOSX_DEPLOYMENT_TARGET = 10.14;
+				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = "com.pozo.Capitalist-World";
-				PRODUCT_NAME = "Capitalist World";
-				SDKROOT = macosx;
-				SWIFT_VERSION = 4.2;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
 			};
 			name = Release;
 		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		910596AD219E43E000657EFA /* Build configuration list for PBXProject "Capitalist World" */ = {
+		9152E96929885E8700F57F7D /* Build configuration list for PBXProject "Capitalist World" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				910596E9219E43E300657EFA /* Debug */,
-				910596EA219E43E300657EFA /* Release */,
+				9152E97B29885E8800F57F7D /* Debug */,
+				9152E97C29885E8800F57F7D /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		910596EB219E43E300657EFA /* Build configuration list for PBXNativeTarget "Capitalist World iOS" */ = {
+		9152E97D29885E8800F57F7D /* Build configuration list for PBXNativeTarget "Capitalist World" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				910596EC219E43E300657EFA /* Debug */,
-				910596ED219E43E300657EFA /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		910596EE219E43E300657EFA /* Build configuration list for PBXNativeTarget "Capitalist World tvOS" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				910596EF219E43E300657EFA /* Debug */,
-				910596F0219E43E300657EFA /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		910596F1219E43E300657EFA /* Build configuration list for PBXNativeTarget "Capitalist World macOS" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				910596F2219E43E300657EFA /* Debug */,
-				910596F3219E43E300657EFA /* Release */,
+				9152E97E29885E8800F57F7D /* Debug */,
+				9152E97F29885E8800F57F7D /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
-	rootObject = 910596AA219E43E000657EFA /* Project object */;
+	rootObject = 9152E96629885E8700F57F7D /* Project object */;
 }
