@@ -12,7 +12,8 @@ enum BuildingType: String, CaseIterable {
     case supermarket = "Supermercado"
 }
 
-struct Building {
+struct Building: Identifiable {
+    let id = UUID()
     let type: BuildingType
     let space: Double
     let cost: Double

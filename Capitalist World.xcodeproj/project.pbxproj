@@ -15,6 +15,10 @@
 		9152E98329888C4A00F57F7D /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 9152E98229888C4A00F57F7D /* Localizable.strings */; };
 		9152E98529888FC700F57F7D /* BuildingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9152E98429888FC700F57F7D /* BuildingView.swift */; };
 		9152E9872988998B00F57F7D /* Building.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9152E9862988998B00F57F7D /* Building.swift */; };
+		918B770A29E5F95800B8251E /* CityData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 918B770929E5F95800B8251E /* CityData.swift */; };
+		918B770C29E5FD6A00B8251E /* Player.swift in Sources */ = {isa = PBXBuildFile; fileRef = 918B770B29E5FD6A00B8251E /* Player.swift */; };
+		91E0C25329F1ED9D00A5C80F /* CapitalistWorldModel.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 91E0C25129F1ED9D00A5C80F /* CapitalistWorldModel.xcdatamodeld */; };
+		91E0C25529F1EE1600A5C80F /* PersistenceController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91E0C25429F1EE1600A5C80F /* PersistenceController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -28,6 +32,10 @@
 		9152E98229888C4A00F57F7D /* Localizable.strings */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; path = Localizable.strings; sourceTree = "<group>"; };
 		9152E98429888FC700F57F7D /* BuildingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BuildingView.swift; sourceTree = "<group>"; };
 		9152E9862988998B00F57F7D /* Building.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Building.swift; sourceTree = "<group>"; };
+		918B770929E5F95800B8251E /* CityData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CityData.swift; sourceTree = "<group>"; };
+		918B770B29E5FD6A00B8251E /* Player.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Player.swift; sourceTree = "<group>"; };
+		91E0C25229F1ED9D00A5C80F /* CapitalistWorldModel.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = CapitalistWorldModel.xcdatamodel; sourceTree = "<group>"; };
+		91E0C25429F1EE1600A5C80F /* PersistenceController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PersistenceController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -64,10 +72,14 @@
 				9152E97329885E8700F57F7D /* ContentView.swift */,
 				9152E9862988998B00F57F7D /* Building.swift */,
 				9152E98429888FC700F57F7D /* BuildingView.swift */,
+				918B770929E5F95800B8251E /* CityData.swift */,
 				9152E9802988603A00F57F7D /* City.swift */,
+				918B770B29E5FD6A00B8251E /* Player.swift */,
 				9152E98229888C4A00F57F7D /* Localizable.strings */,
 				9152E97529885E8800F57F7D /* Assets.xcassets */,
 				9152E97A29885E8800F57F7D /* Capitalist_World.entitlements */,
+				91E0C25129F1ED9D00A5C80F /* CapitalistWorldModel.xcdatamodeld */,
+				91E0C25429F1EE1600A5C80F /* PersistenceController.swift */,
 				9152E97729885E8800F57F7D /* Preview Content */,
 			);
 			path = "Capitalist World";
@@ -152,9 +164,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				91E0C25529F1EE1600A5C80F /* PersistenceController.swift in Sources */,
+				91E0C25329F1ED9D00A5C80F /* CapitalistWorldModel.xcdatamodeld in Sources */,
+				918B770A29E5F95800B8251E /* CityData.swift in Sources */,
 				9152E97429885E8700F57F7D /* ContentView.swift in Sources */,
 				9152E97229885E8700F57F7D /* Capitalist_WorldApp.swift in Sources */,
 				9152E9872988998B00F57F7D /* Building.swift in Sources */,
+				918B770C29E5FD6A00B8251E /* Player.swift in Sources */,
 				9152E98529888FC700F57F7D /* BuildingView.swift in Sources */,
 				9152E9812988603A00F57F7D /* City.swift in Sources */,
 			);
@@ -352,6 +368,19 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		91E0C25129F1ED9D00A5C80F /* CapitalistWorldModel.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				91E0C25229F1ED9D00A5C80F /* CapitalistWorldModel.xcdatamodel */,
+			);
+			currentVersion = 91E0C25229F1ED9D00A5C80F /* CapitalistWorldModel.xcdatamodel */;
+			path = CapitalistWorldModel.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
 	};
 	rootObject = 9152E96629885E8700F57F7D /* Project object */;
 }

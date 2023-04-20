@@ -6,8 +6,13 @@
 //
 
 import Foundation
+import Combine
 
-class City: ObservableObject {
+class City: NSObject, ObservableObject, Identifiable {
+    
+    @Published var buildings: [Building] = []
+    
+    let id = UUID()
     let name: String
     let population: Int
     let purchasingPowerIndex: Double
@@ -15,6 +20,13 @@ class City: ObservableObject {
     let buildableArea: Double
     var availableArea: Double
     var money: Double
+    
+    func build(building: Building, player: Player) {
+        if player.money >= building.cost && availableArea >= building.space {
+            availableArea -= building.space
+            player.money -= building.cost
+        }
+    }
     
     enum BuildingType {
         case house
@@ -29,21 +41,6 @@ class City: ObservableObject {
         self.buildableArea = buildableArea
         self.availableArea = buildableArea
         self.money = 0
-    }
-    
-    func build(building: BuildingType) {
-        switch building {
-        case .house:
-            if availableArea >= 150 {
-                availableArea -= 150
-                money -= 1000
-            }
-        case .supermarket:
-            if availableArea >= 2000 {
-                availableArea -= 2000
-                money -= 175000
-            }
-        }
     }
 }
 
