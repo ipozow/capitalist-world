@@ -8,16 +8,21 @@
 import Foundation
 import Combine
 
-class Player: ObservableObject {
+class PlayerModel: ObservableObject {
     @Published var money: Double
     
     init(money: Double) {
         self.money = money
     }
     
-    func build(building: Building) {
+    init(from entity: PlayerEntity) {
+        self.money = entity.money
+    }
+
+    func build(building: BuildingEntity) {
         if money >= building.cost {
             money -= building.cost
         }
     }
+    
 }

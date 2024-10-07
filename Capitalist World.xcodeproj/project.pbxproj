@@ -7,6 +7,12 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		910F036D2CB350CF004A7EE6 /* Building+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 910F03672CB350CF004A7EE6 /* Building+CoreDataClass.swift */; };
+		910F036E2CB350CF004A7EE6 /* Building+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 910F03682CB350CF004A7EE6 /* Building+CoreDataProperties.swift */; };
+		910F036F2CB350CF004A7EE6 /* Player+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 910F03692CB350CF004A7EE6 /* Player+CoreDataClass.swift */; };
+		910F03702CB350CF004A7EE6 /* Player+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 910F036A2CB350CF004A7EE6 /* Player+CoreDataProperties.swift */; };
+		910F03712CB350CF004A7EE6 /* City+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 910F036B2CB350CF004A7EE6 /* City+CoreDataClass.swift */; };
+		910F03722CB350CF004A7EE6 /* City+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 910F036C2CB350CF004A7EE6 /* City+CoreDataProperties.swift */; };
 		9152E97229885E8700F57F7D /* Capitalist_WorldApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9152E97129885E8700F57F7D /* Capitalist_WorldApp.swift */; };
 		9152E97429885E8700F57F7D /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9152E97329885E8700F57F7D /* ContentView.swift */; };
 		9152E97629885E8800F57F7D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9152E97529885E8800F57F7D /* Assets.xcassets */; };
@@ -22,6 +28,12 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		910F03672CB350CF004A7EE6 /* Building+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Building+CoreDataClass.swift"; sourceTree = "<group>"; };
+		910F03682CB350CF004A7EE6 /* Building+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Building+CoreDataProperties.swift"; sourceTree = "<group>"; };
+		910F03692CB350CF004A7EE6 /* Player+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Player+CoreDataClass.swift"; sourceTree = "<group>"; };
+		910F036A2CB350CF004A7EE6 /* Player+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Player+CoreDataProperties.swift"; sourceTree = "<group>"; };
+		910F036B2CB350CF004A7EE6 /* City+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "City+CoreDataClass.swift"; sourceTree = "<group>"; };
+		910F036C2CB350CF004A7EE6 /* City+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "City+CoreDataProperties.swift"; sourceTree = "<group>"; };
 		9152E96E29885E8700F57F7D /* Capitalist World.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Capitalist World.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		9152E97129885E8700F57F7D /* Capitalist_WorldApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Capitalist_WorldApp.swift; sourceTree = "<group>"; };
 		9152E97329885E8700F57F7D /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -79,6 +91,12 @@
 				9152E97529885E8800F57F7D /* Assets.xcassets */,
 				9152E97A29885E8800F57F7D /* Capitalist_World.entitlements */,
 				91E0C25129F1ED9D00A5C80F /* CapitalistWorldModel.xcdatamodeld */,
+				910F03672CB350CF004A7EE6 /* Building+CoreDataClass.swift */,
+				910F03682CB350CF004A7EE6 /* Building+CoreDataProperties.swift */,
+				910F03692CB350CF004A7EE6 /* Player+CoreDataClass.swift */,
+				910F036A2CB350CF004A7EE6 /* Player+CoreDataProperties.swift */,
+				910F036B2CB350CF004A7EE6 /* City+CoreDataClass.swift */,
+				910F036C2CB350CF004A7EE6 /* City+CoreDataProperties.swift */,
 				91E0C25429F1EE1600A5C80F /* PersistenceController.swift */,
 				9152E97729885E8800F57F7D /* Preview Content */,
 			);
@@ -166,6 +184,12 @@
 			files = (
 				91E0C25529F1EE1600A5C80F /* PersistenceController.swift in Sources */,
 				91E0C25329F1ED9D00A5C80F /* CapitalistWorldModel.xcdatamodeld in Sources */,
+				910F036D2CB350CF004A7EE6 /* Building+CoreDataClass.swift in Sources */,
+				910F036E2CB350CF004A7EE6 /* Building+CoreDataProperties.swift in Sources */,
+				910F036F2CB350CF004A7EE6 /* Player+CoreDataClass.swift in Sources */,
+				910F03702CB350CF004A7EE6 /* Player+CoreDataProperties.swift in Sources */,
+				910F03712CB350CF004A7EE6 /* City+CoreDataClass.swift in Sources */,
+				910F03722CB350CF004A7EE6 /* City+CoreDataProperties.swift in Sources */,
 				918B770A29E5F95800B8251E /* CityData.swift in Sources */,
 				9152E97429885E8700F57F7D /* ContentView.swift in Sources */,
 				9152E97229885E8700F57F7D /* Capitalist_WorldApp.swift in Sources */,
@@ -298,6 +322,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_ENTITLEMENTS = "Capitalist World/Capitalist_World.entitlements";
+				"CODE_SIGN_IDENTITY[sdk=macosx*]" = "-";
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
 				CURRENT_PROJECT_VERSION = 1;
@@ -325,6 +350,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_ENTITLEMENTS = "Capitalist World/Capitalist_World.entitlements";
+				"CODE_SIGN_IDENTITY[sdk=macosx*]" = "-";
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
 				CURRENT_PROJECT_VERSION = 1;

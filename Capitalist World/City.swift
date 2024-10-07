@@ -7,10 +7,12 @@
 
 import Foundation
 import Combine
+import CoreData
 
-class City: NSObject, ObservableObject, Identifiable {
+@objc(City)
+class CityModel: NSObject, ObservableObject, Identifiable {
     
-    @Published var buildings: [Building] = []
+    @Published var buildings: [BuildingEntity] = []
     
     let id = UUID()
     let name: String
@@ -21,10 +23,12 @@ class City: NSObject, ObservableObject, Identifiable {
     var availableArea: Double
     var money: Double
     
-    func build(building: Building, player: Player) {
+    func build(building: BuildingEntity, player: Player) {
         if player.money >= building.cost && availableArea >= building.space {
             availableArea -= building.space
             player.money -= building.cost
+            
+            self.buildings.append(building)
         }
     }
     

@@ -6,18 +6,66 @@
 //
 
 import SwiftUI
+import CoreData
 
 struct ContentView: View {
     @Environment(\.managedObjectContext) private var viewContext
 
-    private let persistenceController = PersistenceController.shared
-    
-    @StateObject var player = Player(money: 5000)
-    @State private var showBuildingView = false
+    @FetchRequest(
+        entity: CityEntity.entity(),
+        sortDescriptors: []
+    ) var cityEntities: FetchedResults<CityEntity>
 
-    @State private var cities = CityData.allCases
+    @FetchRequest(
+        entity: PlayerEntity.entity(),
+        sortDescriptors: []
+    ) var playerEntities: FetchedResults<PlayerEntity>
+        
+    @StateObject var player: PlayerModel
+    @State private var cities: [CityModel] = []
     @State private var selectedCityIndex: Int = 0
     
+    @State private var showBuildingView = false
+    
+    init() {
+        // Cargar el jugador desde CoreData o crear uno nuevo si no existe
+        if let existingPlayerEntity = playerEntities.first {
+            // Cargar el dinero del jugador desde CoreData
+            _player = StateObject(wrappedValue: PlayerModel(money: existingPlayerEntity.money))
+        } else {
+            // Crear un nuevo jugador y una nueva entidad en CoreData
+            let newPlayer = PlayerModel(money: 5000)
+            _player = StateObject(wrappedValue: newPlayer)
+
+            // Crear una nueva entidad PlayerEntity y asignar el valor de dinero
+            let playerEntity = PlayerEntity(context: viewContext)
+            playerEntity.money = newPlayer.money
+            
+            // Guardar el contexto de CoreData para persistir el nuevo jugador
+            PersistenceController.shared.saveContext()
+        }
+
+            // Cargar las ciudades desde CoreData o utilizar las predefinidas si no hay ninguna
+            var loadedCities: [CityEntity] = []
+            for cityEntity in cityEntities {
+                let city = City(
+                    name: cityEntity.name ?? "Unknown",
+                    population: Int(cityEntity.population),
+                    purchasingPowerIndex: cityEntity.purchasingPowerIndex,
+                    area: cityEntity.area,
+                    buildableArea: cityEntity.buildableArea
+                )
+                city.availableArea = cityEntity.availableArea
+                loadedCities.append(city)
+            }
+
+            if loadedCities.isEmpty {
+                self.cities = CityData.allCases
+            } else {
+                self.cities = loadedCities
+            }
+        }
+
     var selectedCityBinding: Binding<City> {
         Binding<City>(
             get: { self.cities[selectedCityIndex] },
@@ -62,7 +110,7 @@ struct ContentView: View {
 
         if cities.indices.contains(selectedCityIndex) {
             HStack {
-                ForEach(cities[selectedCityIndex].buildings, id: \.type) { building in
+                ForEach(cities[selectedCityIndex].buildings, id: \.id) { building in
                     VStack {
                         Text(building.type.rawValue)
                         Text("\(building.space, specifier: "%.2f") m²")

@@ -18,6 +18,11 @@ struct Building: Identifiable {
     let space: Double
     let cost: Double
     
-    static let house = Building(type: .house, space: 150, cost: 1000)
-    static let supermarket = Building(type: .supermarket, space: 2000, cost: 175000)
+    static func createHouse() -> Building {
+        return Building(type: .house, space: 150, cost: 1000)
+    }
+    
+    static func createSupermarket() -> Building {
+        return Building(type: .supermarket, space: 2000, cost: 175000)
+    }
 }
